@@ -1,0 +1,1817 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	xmlns:georss="http://www.georss.org/georss" xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" xmlns:media="http://search.yahoo.com/mrss/"
+	>
+
+<channel>
+	<title>Тестирование производительности</title>
+	<atom:link href="https://loadtestweb.wordpress.com/feed/" rel="self" type="application/rss+xml" />
+	<link>https://loadtestweb.wordpress.com</link>
+	<description>«Ты можешь быстрее. Предела нет. Знай: ты можешь! Будь уверен.» (Морфеус, «Матрица»).</description>
+	<lastBuildDate>Mon, 19 Jun 2017 09:00:22 +0000</lastBuildDate>
+	<language>ru-RU</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.com/</generator>
+
+<image>
+	<url>https://loadtestweb.files.wordpress.com/2017/02/cropped-metrika1.png?w=32</url>
+	<title>Тестирование производительности</title>
+	<link>https://loadtestweb.wordpress.com</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+<cloud domain='loadtestweb.wordpress.com' port='80' path='/?rsscloud=notify' registerProcedure='' protocol='http-post' />
+<atom:link rel="search" type="application/opensearchdescription+xml" href="https://loadtestweb.wordpress.com/osd.xml" title="Тестирование производительности" />
+	<atom:link rel='hub' href='https://loadtestweb.wordpress.com/?pushpress=hub'/>
+	<item>
+		<title>Git. Системы контроля версий</title>
+		<link>https://loadtestweb.wordpress.com/2017/03/12/%d0%ba%d0%be%d0%bd%d1%82%d1%80%d0%be%d0%bb%d1%8c-%d0%b2%d0%b5%d1%80%d1%81%d0%b8%d0%b9/</link>
+		<comments>https://loadtestweb.wordpress.com/2017/03/12/%d0%ba%d0%be%d0%bd%d1%82%d1%80%d0%be%d0%bb%d1%8c-%d0%b2%d0%b5%d1%80%d1%81%d0%b8%d0%b9/#comments</comments>
+		<pubDate>Sun, 12 Mar 2017 10:12:05 +0000</pubDate>
+		<dc:creator><![CDATA[loadtestweb]]></dc:creator>
+				<category><![CDATA[Без рубрики]]></category>
+		<category><![CDATA[Инструкция]]></category>
+
+		<guid isPermaLink="false">http://loadtestweb.wordpress.com/?p=346</guid>
+		<description><![CDATA[Рекомендуется использовать git<img alt="" border="0" src="https://pixel.wp.com/b.gif?host=loadtestweb.wordpress.com&#038;blog=124701137&#038;post=346&#038;subd=loadtestweb&#038;ref=&#038;feed=1" width="1" height="1" />]]></description>
+				<content:encoded><![CDATA[<p>Для сдачи задания рекомендуется использовать систему контроля версий и присылать ссылку на проект. А не просто набор файлов в почтовом сообщении.</p>
+<h2>Открытые площадки</h2>
+<p>Почти на всех проектах работаем с <strong>Bitbucket Server</strong> от Attlassian или с <strong>Gitlab</strong>, у заказчиков в качестве системы контроля версий используются эти продукты, чаще всего. Эти продукты можно использовать и без установки, имеются уже развёрнутые решения:</p>
+<ul>
+<li><a href="https://bitbucket.org/" target="_blank">https://bitbucket.org/</a></li>
+<li><a href="https://gitlab.com/" target="_blank">https://gitlab.com/</a></li>
+</ul>
+<p>Где можно зарегистрироваться и создавать свои репозитории, команды. Репозитории могут быть открытыми и закрытыми.</p>
+<p>BitBucket &#8212; часть enterprise-решения, где есть jira, confluence и всё это работает в связке. А GitLab &#8212; открытое решение, для сравнительно небольших компаний и команд. В Performance Lab нагрузочниками используется GitLab для внутренних проектов.</p>
+<p>Также можно использовать очень популярное решение для открытых проектов:</p>
+<ul>
+<li><a href="https://github.com/" target="_blank">https://github.com/</a></li>
+</ul>
+<p>Если заказчик не предоставляет доступ к своему репозиторию, но нужно организовать работу команды с исходным кодом, то удобно использовать <strong>Bonobo Git Server</strong>, который просто установить и настроить на одной из нагрузочных станций, чаще всего нагрузочные станции работают под <strong>Microsoft Windows Server</strong>.</p>
+<table width="428">
+<tbody>
+<tr>
+<td width="200"><strong>Описание</strong></td>
+<td><strong>Bitbucket</strong></td>
+<td><strong>GitLab</strong></td>
+<td><strong>GitHub</strong></td>
+<td><strong>Bonobo</strong></td>
+</tr>
+<tr>
+<td>Online-площадка</td>
+<td>Да</td>
+<td>Да</td>
+<td>Да</td>
+<td></td>
+</tr>
+<tr>
+<td>Закрытые проекты (бесплатно)</td>
+<td>Да</td>
+<td>Да</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Свой сервер (бесплатно)</td>
+<td></td>
+<td>Да</td>
+<td></td>
+<td>Да</td>
+</tr>
+</tbody>
+</table>
+<h2>Проверка задания</h2>
+<p>На BitBucket.org пользователь, которого нужно добавить в команду проекта:</p>
+<ul>
+<li><a href="https://bitbucket.org/owasp" rel="nofollow">https://bitbucket.org/owasp</a></li>
+</ul>
+<p>На GitLab.com пользователь, которого нужно добавить в команду проекта:</p>
+<ul>
+<li><a href="https://gitlab.com/smirnov_va" rel="nofollow">https://gitlab.com/smirnov_va</a></li>
+</ul>
+<p>На GitHub.com закрытый проект не создать просто так, поэтому там никого в команду добавлять не надо, и так будет всё видно. Мой пользователь там:</p>
+<ul>
+<li><a href="https://github.com/polarnik" rel="nofollow">https://github.com/polarnik</a></li>
+</ul>
+<h2>Работа с репозиторием</h2>
+<p>При создании репозитория на сайте bitbucket/gitlab/github процесс может отличаться.</p>
+<p>А при работе с репозиторием процесс всегда одинаковый:</p>
+<ul>
+<li>можно использовать консольный клиент;</li>
+<li>можно использовать графический клиент.</li>
+</ul>
+<p>Наиболее удобным графическим клиентом для Windows считаю клиент от Atlassian:</p>
+<ul>
+<li><a href="https://www.sourcetreeapp.com/" target="_blank">https://www.sourcetreeapp.com/</a></li>
+</ul>
+<p>А также стандартный клиент git-gui и стандартное приложение gitk, они успешно работают даже если нет подключения к сети Интернет.</p>
+<p>Широкий список клиентов доступен на странице:</p>
+<ul>
+<li><a href="https://git-scm.com/downloads/guis" target="_blank">https://git-scm.com/downloads/guis</a></li>
+</ul>
+<h2>SourceTree + WinMerge</h2>
+<p>Хорошая связка для сохранения результатов разработки <strong>JMeter</strong> в <strong>git</strong>:</p>
+<ul>
+<li><strong>SourceTree</strong> для работы с Git-репозиторием (<a href="https://www.sourcetreeapp.com/">https://www.sourcetreeapp.com/</a>);</li>
+<li><strong>WinMerge</strong> для сравнения jmx-документов, вызывается по &lt;<em>Ctrl+D&gt;</em> из <strong>SourceTree</strong> (<a href="http://winmerge.org/">http://winmerge.org/</a>).</li>
+</ul>
+<p><strong>WinMerge</strong> позволяет задать такие настройки, при которых отображение отличий в XML-документах выглядит более простым и удобным, чем в стандартной утилите <strong>diff</strong>.</p>
+<figure data-shortcode="caption" id="attachment_450" style="width: 575px" class="wp-caption aligncenter"><img data-attachment-id="450" data-permalink="https://loadtestweb.wordpress.com/2017/03/12/%d0%ba%d0%be%d0%bd%d1%82%d1%80%d0%be%d0%bb%d1%8c-%d0%b2%d0%b5%d1%80%d1%81%d0%b8%d0%b9/winmerge-settings/" data-orig-file="https://loadtestweb.files.wordpress.com/2017/03/winmerge-settings.png?w=1140" data-orig-size="575,492" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="winmerge-settings" data-image-description="" data-medium-file="https://loadtestweb.files.wordpress.com/2017/03/winmerge-settings.png?w=1140?w=300" data-large-file="https://loadtestweb.files.wordpress.com/2017/03/winmerge-settings.png?w=1140?w=575" class="alignnone size-full wp-image-450" src="https://loadtestweb.files.wordpress.com/2017/03/winmerge-settings.png?w=1140" alt="Максимально гибкие настройки сравнения в WinMerge" srcset="https://loadtestweb.files.wordpress.com/2017/03/winmerge-settings.png 575w, https://loadtestweb.files.wordpress.com/2017/03/winmerge-settings.png?w=150 150w, https://loadtestweb.files.wordpress.com/2017/03/winmerge-settings.png?w=300 300w" sizes="(max-width: 575px) 100vw, 575px"   /><figcaption class="wp-caption-text">Гибкие настройки сравнения в <strong>WinMerge</strong></figcaption></figure>
+<p>В <strong>SourceTree</strong> есть возможность подключить <strong>WinMerge</strong> в качестве инструмента сравнения.</p>
+<figure data-shortcode="caption" id="attachment_451" style="width: 694px" class="wp-caption aligncenter"><img data-attachment-id="451" data-permalink="https://loadtestweb.wordpress.com/2017/03/12/%d0%ba%d0%be%d0%bd%d1%82%d1%80%d0%be%d0%bb%d1%8c-%d0%b2%d0%b5%d1%80%d1%81%d0%b8%d0%b9/sourcetree-settings/" data-orig-file="https://loadtestweb.files.wordpress.com/2017/03/sourcetree-settings.png?w=1140" data-orig-size="694,491" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="sourcetree-settings" data-image-description="" data-medium-file="https://loadtestweb.files.wordpress.com/2017/03/sourcetree-settings.png?w=1140?w=300" data-large-file="https://loadtestweb.files.wordpress.com/2017/03/sourcetree-settings.png?w=1140?w=694" class="alignnone size-full wp-image-451" src="https://loadtestweb.files.wordpress.com/2017/03/sourcetree-settings.png?w=1140" alt="Интеграция SourceTree и WinMerge" srcset="https://loadtestweb.files.wordpress.com/2017/03/sourcetree-settings.png 694w, https://loadtestweb.files.wordpress.com/2017/03/sourcetree-settings.png?w=150 150w, https://loadtestweb.files.wordpress.com/2017/03/sourcetree-settings.png?w=300 300w" sizes="(max-width: 694px) 100vw, 694px"   /><figcaption class="wp-caption-text">Интеграция <strong>SourceTree</strong> и <strong>WinMerge</strong></figcaption></figure>
+<p>Теперь если в <strong>SourceTree</strong> выделить изменённый файл со скриптом <strong>Apache.JMeter</strong> и нажать <em>&lt;Ctrl+D&gt;</em>, то откроется <strong>WinMerge</strong> и покажет изменения в скрипте. Которые легко отразить в комментарии к commit-у.</p>
+<figure data-shortcode="caption" id="attachment_452" style="width: 1084px" class="wp-caption aligncenter"><a href="https://loadtestweb.files.wordpress.com/2017/03/winmerge.png" target="_blank"><img data-attachment-id="452" data-permalink="https://loadtestweb.wordpress.com/2017/03/12/%d0%ba%d0%be%d0%bd%d1%82%d1%80%d0%be%d0%bb%d1%8c-%d0%b2%d0%b5%d1%80%d1%81%d0%b8%d0%b9/winmerge/" data-orig-file="https://loadtestweb.files.wordpress.com/2017/03/winmerge.png?w=1140" data-orig-size="1084,655" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="winmerge" data-image-description="" data-medium-file="https://loadtestweb.files.wordpress.com/2017/03/winmerge.png?w=1140?w=300" data-large-file="https://loadtestweb.files.wordpress.com/2017/03/winmerge.png?w=1140?w=1024" class="alignnone size-full wp-image-452" src="https://loadtestweb.files.wordpress.com/2017/03/winmerge.png?w=1140" alt="Изменения jmx-файла в WinMerge" srcset="https://loadtestweb.files.wordpress.com/2017/03/winmerge.png 1084w, https://loadtestweb.files.wordpress.com/2017/03/winmerge.png?w=150 150w, https://loadtestweb.files.wordpress.com/2017/03/winmerge.png?w=300 300w, https://loadtestweb.files.wordpress.com/2017/03/winmerge.png?w=768 768w, https://loadtestweb.files.wordpress.com/2017/03/winmerge.png?w=1024 1024w" sizes="(max-width: 1084px) 100vw, 1084px"   /></a><figcaption class="wp-caption-text">Изменения jmx-файла в <strong>WinMerge</strong></figcaption></figure>
+<h2>Ссылка на версию</h2>
+<p>Присылать на проверку можно как ссылку на репозиторий. Так и ссылку на конкретную версию.</p>
+<p>С помощью команды <a href="https://git-scm.com/docs/git-tag" target="_blank">git tag</a> или возможностей графического клиента задаётся метка, например, &#171;v0.01&#187;. И далее удобно отправлять на проверку проект указанной версии и продолжать работу над проектом.</p>
+<p>Примеры таких ссылок для bitbucket.org:</p>
+<ul>
+<li><a href="https://bitbucket.org/atlassian-marketplace/jmeter-sbt-plugin/downloads/?tab=tags" target="_blank">https://bitbucket.org/atlassian-marketplace/jmeter-sbt-plugin/downloads/?tab=tags</a>.</li>
+</ul>
+<p>Примеры таких ссылок для gitlab.com:</p>
+<ul>
+<li><a href="https://gitlab.com/gitlab-org/gitlab-ce/tags" target="_blank">https://gitlab.com/gitlab-org/gitlab-ce/tags</a>.</li>
+</ul>
+<p>Примеры таких ссылок для github.com:</p>
+<ul>
+<li><a href="https://github.com/pflb/Jmeter.Plugin.TailSampler/releases" target="_blank">https://github.com/pflb/Jmeter.Plugin.TailSampler/releases</a>;</li>
+<li><a href="https://github.com/pflb/Jmeter.Plugin.TailSampler/tags" target="_blank">https://github.com/pflb/Jmeter.Plugin.TailSampler/tags</a>.</li>
+</ul>
+<p><span style="color:#999999;">Использовано изображение с сайта multifandom.ru</span></p><br />  <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gocomments/loadtestweb.wordpress.com/346/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/comments/loadtestweb.wordpress.com/346/" /></a> <img alt="" border="0" src="https://pixel.wp.com/b.gif?host=loadtestweb.wordpress.com&#038;blog=124701137&#038;post=346&#038;subd=loadtestweb&#038;ref=&#038;feed=1" width="1" height="1" />]]></content:encoded>
+			<wfw:commentRss>https://loadtestweb.wordpress.com/2017/03/12/%d0%ba%d0%be%d0%bd%d1%82%d1%80%d0%be%d0%bb%d1%8c-%d0%b2%d0%b5%d1%80%d1%81%d0%b8%d0%b9/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+	
+		<media:thumbnail url="https://loadtestweb.files.wordpress.com/2017/03/spider-man-3.jpg" />
+		<media:content url="http://loadtestweb.files.wordpress.com/2017/03/spider-man-3.jpg" medium="image">
+			<media:title type="html">spider.man.3</media:title>
+		</media:content>
+
+		<media:content url="http://0.gravatar.com/avatar/993da3fa683fc7e2af464c5b9886609f?s=96&#38;d=identicon&#38;r=G" medium="image">
+			<media:title type="html">loadtestweb</media:title>
+		</media:content>
+
+		<media:content url="http://loadtestweb.files.wordpress.com/2017/03/winmerge-settings.png" medium="image">
+			<media:title type="html">Максимально гибкие настройки сравнения в WinMerge</media:title>
+		</media:content>
+
+		<media:content url="http://loadtestweb.files.wordpress.com/2017/03/sourcetree-settings.png" medium="image">
+			<media:title type="html">Интеграция SourceTree и WinMerge</media:title>
+		</media:content>
+
+		<media:content url="http://loadtestweb.files.wordpress.com/2017/03/winmerge.png" medium="image">
+			<media:title type="html">Изменения jmx-файла в WinMerge</media:title>
+		</media:content>
+	</item>
+		<item>
+		<title>Fiddler 4. Настройка HTTPS</title>
+		<link>https://loadtestweb.wordpress.com/2017/03/02/fiddler-4-%d0%bd%d0%b0%d1%81%d1%82%d1%80%d0%be%d0%b9%d0%ba%d0%b0-%d0%b8-%d0%b8%d1%81%d0%bf%d0%be%d0%bb%d1%8c%d0%b7%d0%be%d0%b2%d0%b0%d0%bd%d0%b8%d0%b5-%d1%81-https/</link>
+		<pubDate>Thu, 02 Mar 2017 15:32:07 +0000</pubDate>
+		<dc:creator><![CDATA[loadtestweb]]></dc:creator>
+				<category><![CDATA[Без рубрики]]></category>
+		<category><![CDATA[Инструкция]]></category>
+
+		<guid isPermaLink="false">http://loadtestweb.wordpress.com/?p=248</guid>
+		<description><![CDATA[Инструкция для Mozilla Firefox<img alt="" border="0" src="https://pixel.wp.com/b.gif?host=loadtestweb.wordpress.com&#038;blog=124701137&#038;post=248&#038;subd=loadtestweb&#038;ref=&#038;feed=1" width="1" height="1" />]]></description>
+				<content:encoded><![CDATA[<p>Текущий сайт https://loadtestweb.wordpress.com/ доступен по протоколу HTTPS. И задания предполагают работу с HTTP-запросами, которые удобно изучать используя Fiddler 4.</p>
+<p>Ниже описано, как его настроить и использовать на примере следующего окружения:</p>
+<ul>
+<li>Windows 7 x64 (операционная система);</li>
+<li>.NET Framework 4 (предполагается, что .NET 4 установлен в системе, нужен для работы Fiddler 4);</li>
+<li>Fiddler 4 (прокси сервер);</li>
+<li>Mozilla Firefox (браузер, который будет работать через прокси-сервер).</li>
+</ul>
+<p>Дистрибутив Fiddler 4 можно скачать по ссылке:</p>
+<ul>
+<li><a href="https://www.telerik.com/docs/default-source/fiddler/fiddlersetup.exe?sfvrsn=4" target="_blank">https://www.telerik.com/docs/default-source/fiddler/fiddlersetup.exe?sfvrsn=4</a></li>
+</ul>
+<p>Описание доступно на сайте проекта:</p>
+<ul>
+<li><a href="http://www.telerik.com/fiddler" target="_blank">http://www.telerik.com/fiddler</a></li>
+</ul>
+<p>После установки можно сделать следующие натройки:</p>
+<ul>
+<li>сделать прокси-сервис несистемным;</li>
+<li>включить расшифровку HTTPS;</li>
+<li>отключить проверку обновлений.</li>
+</ul>
+<h1>Настройки Fiddler 4</h1>
+<h2>Сделать прокси-сервис несистемным</h2>
+<p>Запустить <strong>Fiddler 4</strong> и отжать кнопку перехвата всех HTTP-запросов, чтобы не было надписи <em><span style="text-decoration:underline;"><strong>Capturing</strong></span></em>.</p>
+<p><a href="https://loadtestweb.files.wordpress.com/2017/03/fiddler-4-1.png"><img data-attachment-id="275" data-permalink="https://loadtestweb.wordpress.com/2017/03/02/fiddler-4-%d0%bd%d0%b0%d1%81%d1%82%d1%80%d0%be%d0%b9%d0%ba%d0%b0-%d0%b8-%d0%b8%d1%81%d0%bf%d0%be%d0%bb%d1%8c%d0%b7%d0%be%d0%b2%d0%b0%d0%bd%d0%b8%d0%b5-%d1%81-https/fiddler-4-1/" data-orig-file="https://loadtestweb.files.wordpress.com/2017/03/fiddler-4-1.png?w=1140" data-orig-size="925,501" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="fiddler-4-1" data-image-description="" data-medium-file="https://loadtestweb.files.wordpress.com/2017/03/fiddler-4-1.png?w=1140?w=300" data-large-file="https://loadtestweb.files.wordpress.com/2017/03/fiddler-4-1.png?w=1140?w=925" class="alignnone size-full wp-image-275" src="https://loadtestweb.files.wordpress.com/2017/03/fiddler-4-1.png?w=1140" alt="fiddler-4-1" srcset="https://loadtestweb.files.wordpress.com/2017/03/fiddler-4-1.png 925w, https://loadtestweb.files.wordpress.com/2017/03/fiddler-4-1.png?w=150 150w, https://loadtestweb.files.wordpress.com/2017/03/fiddler-4-1.png?w=300 300w, https://loadtestweb.files.wordpress.com/2017/03/fiddler-4-1.png?w=768 768w" sizes="(max-width: 925px) 100vw, 925px"   /></a></p>
+<p>Открыть меню настроек из главного меню <em> и на вкладке &#171;Connection&#187; отжать кнопку <span style="text-decoration:underline;"><strong>Act as system proxy on startup</strong></span></em>.</p>
+<p><a href="https://loadtestweb.files.wordpress.com/2017/03/fiddler-4-2.png"><img data-attachment-id="282" data-permalink="https://loadtestweb.wordpress.com/2017/03/02/fiddler-4-%d0%bd%d0%b0%d1%81%d1%82%d1%80%d0%be%d0%b9%d0%ba%d0%b0-%d0%b8-%d0%b8%d1%81%d0%bf%d0%be%d0%bb%d1%8c%d0%b7%d0%be%d0%b2%d0%b0%d0%bd%d0%b8%d0%b5-%d1%81-https/fiddler-4-2/" data-orig-file="https://loadtestweb.files.wordpress.com/2017/03/fiddler-4-2.png?w=1140" data-orig-size="925,501" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="fiddler-4-2" data-image-description="" data-medium-file="https://loadtestweb.files.wordpress.com/2017/03/fiddler-4-2.png?w=1140?w=300" data-large-file="https://loadtestweb.files.wordpress.com/2017/03/fiddler-4-2.png?w=1140?w=925" class="alignnone size-full wp-image-282" src="https://loadtestweb.files.wordpress.com/2017/03/fiddler-4-2.png?w=1140" alt="fiddler-4-2" srcset="https://loadtestweb.files.wordpress.com/2017/03/fiddler-4-2.png 925w, https://loadtestweb.files.wordpress.com/2017/03/fiddler-4-2.png?w=150 150w, https://loadtestweb.files.wordpress.com/2017/03/fiddler-4-2.png?w=300 300w, https://loadtestweb.files.wordpress.com/2017/03/fiddler-4-2.png?w=768 768w" sizes="(max-width: 925px) 100vw, 925px"   /></a></p>
+<h2>Включить расшировку HTTPS</h2>
+<p>Открыть меню настроек из главного меню <em> и на вкладке &#171;HTTPS&#187; нажать кнопки:</em></p>
+<ul>
+<li><em><span style="text-decoration:underline;"><strong>Capture HTTPS CONNECTs</strong></span></em>;</li>
+<li><em><span style="text-decoration:underline;"><strong>Decrypt HTTPS traffic</strong></span></em>.</li>
+</ul>
+<p><a href="https://loadtestweb.files.wordpress.com/2017/03/fiddler-4-3.png"><img data-attachment-id="296" data-permalink="https://loadtestweb.wordpress.com/2017/03/02/fiddler-4-%d0%bd%d0%b0%d1%81%d1%82%d1%80%d0%be%d0%b9%d0%ba%d0%b0-%d0%b8-%d0%b8%d1%81%d0%bf%d0%be%d0%bb%d1%8c%d0%b7%d0%be%d0%b2%d0%b0%d0%bd%d0%b8%d0%b5-%d1%81-https/fiddler-4-3/" data-orig-file="https://loadtestweb.files.wordpress.com/2017/03/fiddler-4-3.png?w=1140" data-orig-size="925,501" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="fiddler-4-3" data-image-description="" data-medium-file="https://loadtestweb.files.wordpress.com/2017/03/fiddler-4-3.png?w=1140?w=300" data-large-file="https://loadtestweb.files.wordpress.com/2017/03/fiddler-4-3.png?w=1140?w=925" class="alignnone size-full wp-image-296" src="https://loadtestweb.files.wordpress.com/2017/03/fiddler-4-3.png?w=1140" alt="fiddler-4-3" srcset="https://loadtestweb.files.wordpress.com/2017/03/fiddler-4-3.png 925w, https://loadtestweb.files.wordpress.com/2017/03/fiddler-4-3.png?w=150 150w, https://loadtestweb.files.wordpress.com/2017/03/fiddler-4-3.png?w=300 300w, https://loadtestweb.files.wordpress.com/2017/03/fiddler-4-3.png?w=768 768w" sizes="(max-width: 925px) 100vw, 925px"   /></a></p>
+<h1>Настройки Mozilla Firefox</h1>
+<h2>Загрузка сертификата Fiddler в Mozilla Firefox</h2>
+<p>Запустить <strong>Fiddler</strong> и выгрузить сертификат в файл на рабочий стол.</p>
+<p><a href="https://loadtestweb.files.wordpress.com/2017/03/fiddler-4-4.png"><img data-attachment-id="299" data-permalink="https://loadtestweb.wordpress.com/2017/03/02/fiddler-4-%d0%bd%d0%b0%d1%81%d1%82%d1%80%d0%be%d0%b9%d0%ba%d0%b0-%d0%b8-%d0%b8%d1%81%d0%bf%d0%be%d0%bb%d1%8c%d0%b7%d0%be%d0%b2%d0%b0%d0%bd%d0%b8%d0%b5-%d1%81-https/fiddler-4-4/" data-orig-file="https://loadtestweb.files.wordpress.com/2017/03/fiddler-4-4.png?w=1140" data-orig-size="925,501" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="fiddler-4-4" data-image-description="" data-medium-file="https://loadtestweb.files.wordpress.com/2017/03/fiddler-4-4.png?w=1140?w=300" data-large-file="https://loadtestweb.files.wordpress.com/2017/03/fiddler-4-4.png?w=1140?w=925" class="alignnone size-full wp-image-299" src="https://loadtestweb.files.wordpress.com/2017/03/fiddler-4-4.png?w=1140" alt="fiddler-4-4" srcset="https://loadtestweb.files.wordpress.com/2017/03/fiddler-4-4.png 925w, https://loadtestweb.files.wordpress.com/2017/03/fiddler-4-4.png?w=150 150w, https://loadtestweb.files.wordpress.com/2017/03/fiddler-4-4.png?w=300 300w, https://loadtestweb.files.wordpress.com/2017/03/fiddler-4-4.png?w=768 768w" sizes="(max-width: 925px) 100vw, 925px"   /></a></p>
+<p>Запустить <strong>Mozilla Firefox</strong> открыть настройки, расширенные, сертификаты и импортировать сертификат <strong>Fiddler 4</strong> в список доверенных. Выбрав сертификат с рабочего стола.</p>
+<p><a href="https://loadtestweb.files.wordpress.com/2017/03/firefox.png"><img data-attachment-id="300" data-permalink="https://loadtestweb.wordpress.com/2017/03/02/fiddler-4-%d0%bd%d0%b0%d1%81%d1%82%d1%80%d0%be%d0%b9%d0%ba%d0%b0-%d0%b8-%d0%b8%d1%81%d0%bf%d0%be%d0%bb%d1%8c%d0%b7%d0%be%d0%b2%d0%b0%d0%bd%d0%b8%d0%b5-%d1%81-https/firefox/" data-orig-file="https://loadtestweb.files.wordpress.com/2017/03/firefox.png?w=1140" data-orig-size="925,738" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="firefox" data-image-description="" data-medium-file="https://loadtestweb.files.wordpress.com/2017/03/firefox.png?w=1140?w=300" data-large-file="https://loadtestweb.files.wordpress.com/2017/03/firefox.png?w=1140?w=925" class="alignnone size-full wp-image-300" src="https://loadtestweb.files.wordpress.com/2017/03/firefox.png?w=1140" alt="firefox" srcset="https://loadtestweb.files.wordpress.com/2017/03/firefox.png 925w, https://loadtestweb.files.wordpress.com/2017/03/firefox.png?w=150 150w, https://loadtestweb.files.wordpress.com/2017/03/firefox.png?w=300 300w, https://loadtestweb.files.wordpress.com/2017/03/firefox.png?w=768 768w" sizes="(max-width: 925px) 100vw, 925px"   /></a></p>
+<h2>Настройка работы Mozilla Firefox через прокси сервер</h2>
+<p>Запустить Fiddler, посмотреть на каком порту он слушает соединения.</p>
+<p><a href="https://loadtestweb.files.wordpress.com/2017/03/fiddler-4-5.png"><img data-attachment-id="301" data-permalink="https://loadtestweb.wordpress.com/2017/03/02/fiddler-4-%d0%bd%d0%b0%d1%81%d1%82%d1%80%d0%be%d0%b9%d0%ba%d0%b0-%d0%b8-%d0%b8%d1%81%d0%bf%d0%be%d0%bb%d1%8c%d0%b7%d0%be%d0%b2%d0%b0%d0%bd%d0%b8%d0%b5-%d1%81-https/fiddler-4-5/" data-orig-file="https://loadtestweb.files.wordpress.com/2017/03/fiddler-4-5.png?w=1140" data-orig-size="924,501" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="fiddler-4-5" data-image-description="" data-medium-file="https://loadtestweb.files.wordpress.com/2017/03/fiddler-4-5.png?w=1140?w=300" data-large-file="https://loadtestweb.files.wordpress.com/2017/03/fiddler-4-5.png?w=1140?w=924" class="alignnone size-full wp-image-301" src="https://loadtestweb.files.wordpress.com/2017/03/fiddler-4-5.png?w=1140" alt="fiddler-4-5" srcset="https://loadtestweb.files.wordpress.com/2017/03/fiddler-4-5.png 924w, https://loadtestweb.files.wordpress.com/2017/03/fiddler-4-5.png?w=150 150w, https://loadtestweb.files.wordpress.com/2017/03/fiddler-4-5.png?w=300 300w, https://loadtestweb.files.wordpress.com/2017/03/fiddler-4-5.png?w=768 768w" sizes="(max-width: 924px) 100vw, 924px"   /></a></p>
+<p>Установить в Mozilla Firefox работу через прокси-сервер на этом же порту, в большинстве случаев это будет localhost и порт 8888.</p>
+<p><a href="https://loadtestweb.files.wordpress.com/2017/03/firefox-2.png"><img data-attachment-id="302" data-permalink="https://loadtestweb.wordpress.com/2017/03/02/fiddler-4-%d0%bd%d0%b0%d1%81%d1%82%d1%80%d0%be%d0%b9%d0%ba%d0%b0-%d0%b8-%d0%b8%d1%81%d0%bf%d0%be%d0%bb%d1%8c%d0%b7%d0%be%d0%b2%d0%b0%d0%bd%d0%b8%d0%b5-%d1%81-https/firefox-2/" data-orig-file="https://loadtestweb.files.wordpress.com/2017/03/firefox-2.png?w=1140" data-orig-size="926,876" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="firefox-2" data-image-description="" data-medium-file="https://loadtestweb.files.wordpress.com/2017/03/firefox-2.png?w=1140?w=300" data-large-file="https://loadtestweb.files.wordpress.com/2017/03/firefox-2.png?w=1140?w=926" class="alignnone size-full wp-image-302" src="https://loadtestweb.files.wordpress.com/2017/03/firefox-2.png?w=1140" alt="firefox-2" srcset="https://loadtestweb.files.wordpress.com/2017/03/firefox-2.png 926w, https://loadtestweb.files.wordpress.com/2017/03/firefox-2.png?w=150 150w, https://loadtestweb.files.wordpress.com/2017/03/firefox-2.png?w=300 300w, https://loadtestweb.files.wordpress.com/2017/03/firefox-2.png?w=768 768w" sizes="(max-width: 926px) 100vw, 926px"   /></a></p>
+<h1>Готово!</h1>
+<p>Теперь при работе <strong>Mozilla Firefox</strong> не отображаются ошибки соединения, связанные с сертификатом. А пишется, что соединение зашировано и корневой сертификат называется &#171;DO_NOT_TRUST&#187;, это сертификат <strong>Fiddler 4</strong>.</p>
+<p><a href="https://loadtestweb.files.wordpress.com/2017/03/firefox-3.png"><img data-attachment-id="303" data-permalink="https://loadtestweb.wordpress.com/2017/03/02/fiddler-4-%d0%bd%d0%b0%d1%81%d1%82%d1%80%d0%be%d0%b9%d0%ba%d0%b0-%d0%b8-%d0%b8%d1%81%d0%bf%d0%be%d0%bb%d1%8c%d0%b7%d0%be%d0%b2%d0%b0%d0%bd%d0%b8%d0%b5-%d1%81-https/firefox-3/" data-orig-file="https://loadtestweb.files.wordpress.com/2017/03/firefox-3.png?w=1140" data-orig-size="926,653" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="firefox-3" data-image-description="" data-medium-file="https://loadtestweb.files.wordpress.com/2017/03/firefox-3.png?w=1140?w=300" data-large-file="https://loadtestweb.files.wordpress.com/2017/03/firefox-3.png?w=1140?w=926" class="alignnone size-full wp-image-303" src="https://loadtestweb.files.wordpress.com/2017/03/firefox-3.png?w=1140" alt="firefox-3" srcset="https://loadtestweb.files.wordpress.com/2017/03/firefox-3.png 926w, https://loadtestweb.files.wordpress.com/2017/03/firefox-3.png?w=150 150w, https://loadtestweb.files.wordpress.com/2017/03/firefox-3.png?w=300 300w, https://loadtestweb.files.wordpress.com/2017/03/firefox-3.png?w=768 768w" sizes="(max-width: 926px) 100vw, 926px"   /></a></p>
+<p>А в <strong>Fiddler 4</strong> видны все запросы и ответы. Их можно просматривать на вкладке &#171;Inspectors&#187;.</p>
+<p><a href="https://loadtestweb.files.wordpress.com/2017/03/fiddler-4-7.png"><img data-attachment-id="305" data-permalink="https://loadtestweb.wordpress.com/2017/03/02/fiddler-4-%d0%bd%d0%b0%d1%81%d1%82%d1%80%d0%be%d0%b9%d0%ba%d0%b0-%d0%b8-%d0%b8%d1%81%d0%bf%d0%be%d0%bb%d1%8c%d0%b7%d0%be%d0%b2%d0%b0%d0%bd%d0%b8%d0%b5-%d1%81-https/fiddler-4-7/" data-orig-file="https://loadtestweb.files.wordpress.com/2017/03/fiddler-4-7.png?w=1140" data-orig-size="925,501" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="fiddler-4-7" data-image-description="" data-medium-file="https://loadtestweb.files.wordpress.com/2017/03/fiddler-4-7.png?w=1140?w=300" data-large-file="https://loadtestweb.files.wordpress.com/2017/03/fiddler-4-7.png?w=1140?w=925" class="alignnone size-full wp-image-305" src="https://loadtestweb.files.wordpress.com/2017/03/fiddler-4-7.png?w=1140" alt="fiddler-4-7" srcset="https://loadtestweb.files.wordpress.com/2017/03/fiddler-4-7.png 925w, https://loadtestweb.files.wordpress.com/2017/03/fiddler-4-7.png?w=150 150w, https://loadtestweb.files.wordpress.com/2017/03/fiddler-4-7.png?w=300 300w, https://loadtestweb.files.wordpress.com/2017/03/fiddler-4-7.png?w=768 768w" sizes="(max-width: 925px) 100vw, 925px"   /></a></p>
+<p>Для удобства работы можно включить правила (Главное меню / Rules):</p>
+<ul>
+<li><em><span style="text-decoration:underline;"><strong>Hide CONNECTs</strong></span></em>;</li>
+<li><em><span style="text-decoration:underline;"><strong>Remove All Encodings</strong></span></em>;</li>
+<li><em><span style="text-decoration:underline;"><strong>Automatically Authenticate</strong></span></em>.</li>
+</ul>
+<p><span style="color:#999999;">Использовано изображение с сайта http://toposrednik.ru</span>.</p><br />  <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gocomments/loadtestweb.wordpress.com/248/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/comments/loadtestweb.wordpress.com/248/" /></a> <img alt="" border="0" src="https://pixel.wp.com/b.gif?host=loadtestweb.wordpress.com&#038;blog=124701137&#038;post=248&#038;subd=loadtestweb&#038;ref=&#038;feed=1" width="1" height="1" />]]></content:encoded>
+		
+		<media:thumbnail url="https://loadtestweb.files.wordpress.com/2017/03/art-motociklist-shlem.jpg" />
+		<media:content url="http://loadtestweb.files.wordpress.com/2017/03/art-motociklist-shlem.jpg" medium="image">
+			<media:title type="html">art-motociklist-shlem</media:title>
+		</media:content>
+
+		<media:content url="http://0.gravatar.com/avatar/993da3fa683fc7e2af464c5b9886609f?s=96&#38;d=identicon&#38;r=G" medium="image">
+			<media:title type="html">loadtestweb</media:title>
+		</media:content>
+
+		<media:content url="http://loadtestweb.files.wordpress.com/2017/03/fiddler-4-1.png" medium="image">
+			<media:title type="html">fiddler-4-1</media:title>
+		</media:content>
+
+		<media:content url="http://loadtestweb.files.wordpress.com/2017/03/fiddler-4-2.png" medium="image">
+			<media:title type="html">fiddler-4-2</media:title>
+		</media:content>
+
+		<media:content url="http://loadtestweb.files.wordpress.com/2017/03/fiddler-4-3.png" medium="image">
+			<media:title type="html">fiddler-4-3</media:title>
+		</media:content>
+
+		<media:content url="http://loadtestweb.files.wordpress.com/2017/03/fiddler-4-4.png" medium="image">
+			<media:title type="html">fiddler-4-4</media:title>
+		</media:content>
+
+		<media:content url="http://loadtestweb.files.wordpress.com/2017/03/firefox.png" medium="image">
+			<media:title type="html">firefox</media:title>
+		</media:content>
+
+		<media:content url="http://loadtestweb.files.wordpress.com/2017/03/fiddler-4-5.png" medium="image">
+			<media:title type="html">fiddler-4-5</media:title>
+		</media:content>
+
+		<media:content url="http://loadtestweb.files.wordpress.com/2017/03/firefox-2.png" medium="image">
+			<media:title type="html">firefox-2</media:title>
+		</media:content>
+
+		<media:content url="http://loadtestweb.files.wordpress.com/2017/03/firefox-3.png" medium="image">
+			<media:title type="html">firefox-3</media:title>
+		</media:content>
+
+		<media:content url="http://loadtestweb.files.wordpress.com/2017/03/fiddler-4-7.png" medium="image">
+			<media:title type="html">fiddler-4-7</media:title>
+		</media:content>
+	</item>
+		<item>
+		<title>Задание 4. Оставить комментарий к статье</title>
+		<link>https://loadtestweb.wordpress.com/2017/03/02/%d0%b7%d0%b0%d0%b4%d0%b0%d0%bd%d0%b8%d0%b5-4-%d0%be%d1%81%d1%82%d0%b0%d0%b2%d0%b8%d1%82%d1%8c-%d0%ba%d0%be%d0%bc%d0%bc%d0%b5%d0%bd%d1%82%d0%b0%d1%80%d0%b8%d0%b9-%d0%ba-%d1%81%d1%82%d0%b0%d1%82%d1%8c/</link>
+		<comments>https://loadtestweb.wordpress.com/2017/03/02/%d0%b7%d0%b0%d0%b4%d0%b0%d0%bd%d0%b8%d0%b5-4-%d0%be%d1%81%d1%82%d0%b0%d0%b2%d0%b8%d1%82%d1%8c-%d0%ba%d0%be%d0%bc%d0%bc%d0%b5%d0%bd%d1%82%d0%b0%d1%80%d0%b8%d0%b9-%d0%ba-%d1%81%d1%82%d0%b0%d1%82%d1%8c/#respond</comments>
+		<pubDate>Wed, 01 Mar 2017 22:34:51 +0000</pubDate>
+		<dc:creator><![CDATA[loadtestweb]]></dc:creator>
+				<category><![CDATA[Задание по школе тестирования]]></category>
+		<category><![CDATA[Задание]]></category>
+		<category><![CDATA[JMeter]]></category>
+		<category><![CDATA[тестовые данные]]></category>
+
+		<guid isPermaLink="false">http://loadtestweb.wordpress.com/?p=229</guid>
+		<description><![CDATA[CSV, корреляция, отправка формы<img alt="" border="0" src="https://pixel.wp.com/b.gif?host=loadtestweb.wordpress.com&#038;blog=124701137&#038;post=229&#038;subd=loadtestweb&#038;ref=&#038;feed=1" width="1" height="1" />]]></description>
+				<content:encoded><![CDATA[<h1>Интенсивность и профиль нагрузки</h1>
+<p>Чтобы после отправки комментария не возвращалось сообщение:</p>
+<blockquote><p>Вы комментируете слишком быстро. Попридержите коней.</p></blockquote>
+<p>Надо чтобы сценарии выполнялись с суммарной интенсивностью 1,5-2,5 сценария в минуту. То есть все виртуальные пользователи, должны создавать нагрузку соотвествующую 1,5-2,5 сценария в минуту.</p>
+<p>В сценарии должно отправляться два комментария:</p>
+<ol>
+<li>Комментарий от незарегистрированного пользователя:
+<ul>
+<li>Использовать список из 10-ти пользователей вида:
+<ul>
+<li><a href="mailto:tectep1@loadtestweb.wordpress.com">tectep1@loadtestweb.wordpress.com</a>, Performance Tester 01, https://loadtestweb.wordpress.com/</li>
+<li><a href="mailto:tectep2@loadtestweb.wordpress.com">tectep2@loadtestweb.wordpress.com</a>, Performance Tester 02, <a href="https://loadtestweb.wordpress.com/" rel="nofollow">https://loadtestweb.wordpress.com/</a></li>
+<li><a href="mailto:tectep3@loadtestweb.wordpress.com">tectep3@loadtestweb.wordpress.com</a>, Performance Tester 03, <a href="https://loadtestweb.wordpress.com/" rel="nofollow">https://loadtestweb.wordpress.com/</a></li>
+<li>&#8230;</li>
+</ul>
+</li>
+<li>Параметры пользователей загружать, используя <strong>CSV Data Set Config</strong>, описание способа смотри ниже.</li>
+</ul>
+</li>
+<li>Комментарий от зарегистрированного пользователя, одного:
+<ul>
+<li>Использовать только одного пользователя:
+<ul>
+<li>Выполнить аутентификацию через wordpress.com (учётные данные будут созданы)</li>
+<li>Через twitter (необходимо зарегистрироваться самостоятельно)</li>
+<li>Через Google (необходимо зарегистрироваться самостоятельно)</li>
+<li>Через Facebook (необходимо зарегистрироваться самостоятельно)</li>
+</ul>
+</li>
+<li>Параметры пользователя загружать, используя также <strong>CSV Data Set Config</strong> с файлом из одной строки или переменные и файл свойств, описание способов смотри ниже.</li>
+</ul>
+</li>
+</ol>
+<p>Между первым и вторым комментарием надо поставить паузу, задержку, миниумм на 10-15 секунд. Паузы в <strong>Apache.Jmeter</strong> создаются с помощью таймеров.</p>
+<p>Чтобы проверить, что интенсивность расчитана верно. Можно ориентироваться на то, что каждую минуту должно появляться под тестовой страницей примерно 4 комментария (+/-).</p>
+<p>У каждого учащегося своя <a href="https://loadtestweb.wordpress.com/category/%D1%82%D0%B5%D1%81%D1%82%D0%BE%D0%B2%D0%B0%D1%8F-%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0/" target="_blank">тестовая страница</a> и своё количество виртуальных пользователей.</p>
+<h1>Cookies</h1>
+<p>Важно перед каждой итерацией очищать cookies. Иначе единожды вошедший пользователь, например, через wordpress, так всегда и будет считаться вошедшим.</p>
+<p>А нужно каждую итерацию выполнять одинаковый сценарий. То есть, выполнять аутентификацию снова и снова.</p>
+<p>Параметры очистки Cookies задаются в конфигурационном элементе <strong>HTTP Cookie Manager</strong>:</p>
+<ul>
+<li><a href="http://jmeter.apache.org/usermanual/component_reference.html#HTTP_Cookie_Manager" target="_blank">HTTP Cookie Manager</a>.</li>
+</ul>
+<h1>Тексты комментариев</h1>
+<p>Тексты комментариев можно подобрать самостоятельно, можно взять готовые из списка сформированного на основе пословиц и поговорок из русскоязычной википедии:</p>
+<ul>
+<li><a title="comments-1" href="https://loadtestweb.files.wordpress.com/2017/03/comments-1.xls">comments-1</a> (документ <strong>Excel</strong>, на данном сайте не разметить txt-файл, в <strong>JMeter</strong> нужно использовать txt-файл или csv-файл из одной колонки).</li>
+</ul>
+<p>В файле тексты отсортированы в алфавитном порядке. Чтобы имитировать процесс отправки случайных комментариев из некоторого набора можно перемешать строки в файле случайным образом перед запуском тестирования. Например, используя текстовый редактор <strong>Sublime Text 2</strong> или в <strong>Microsoft Office Excel</strong> (добавить колонку со случайным значением и отсортировать по ней).</p>
+<p><img data-attachment-id="242" data-permalink="https://loadtestweb.wordpress.com/2017/03/02/%d0%b7%d0%b0%d0%b4%d0%b0%d0%bd%d0%b8%d0%b5-4-%d0%be%d1%81%d1%82%d0%b0%d0%b2%d0%b8%d1%82%d1%8c-%d0%ba%d0%be%d0%bc%d0%bc%d0%b5%d0%bd%d1%82%d0%b0%d1%80%d0%b8%d0%b9-%d0%ba-%d1%81%d1%82%d0%b0%d1%82%d1%8c/sublime-text-2/" data-orig-file="https://loadtestweb.files.wordpress.com/2017/03/sublime-text-2.png?w=1140" data-orig-size="374,448" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="sublime-text-2" data-image-description="" data-medium-file="https://loadtestweb.files.wordpress.com/2017/03/sublime-text-2.png?w=1140?w=250" data-large-file="https://loadtestweb.files.wordpress.com/2017/03/sublime-text-2.png?w=1140?w=374" class="alignnone size-full wp-image-242" src="https://loadtestweb.files.wordpress.com/2017/03/sublime-text-2.png?w=1140" alt="sublime-text-2" srcset="https://loadtestweb.files.wordpress.com/2017/03/sublime-text-2.png 374w, https://loadtestweb.files.wordpress.com/2017/03/sublime-text-2.png?w=125 125w, https://loadtestweb.files.wordpress.com/2017/03/sublime-text-2.png?w=250 250w" sizes="(max-width: 374px) 100vw, 374px"   /></p>
+<p><img data-attachment-id="245" data-permalink="https://loadtestweb.wordpress.com/2017/03/02/%d0%b7%d0%b0%d0%b4%d0%b0%d0%bd%d0%b8%d0%b5-4-%d0%be%d1%81%d1%82%d0%b0%d0%b2%d0%b8%d1%82%d1%8c-%d0%ba%d0%be%d0%bc%d0%bc%d0%b5%d0%bd%d1%82%d0%b0%d1%80%d0%b8%d0%b9-%d0%ba-%d1%81%d1%82%d0%b0%d1%82%d1%8c/excel-2/" data-orig-file="https://loadtestweb.files.wordpress.com/2017/03/excel1.png?w=1140" data-orig-size="642,405" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="excel" data-image-description="" data-medium-file="https://loadtestweb.files.wordpress.com/2017/03/excel1.png?w=1140?w=300" data-large-file="https://loadtestweb.files.wordpress.com/2017/03/excel1.png?w=1140?w=642" class="alignnone size-full wp-image-245" src="https://loadtestweb.files.wordpress.com/2017/03/excel1.png?w=1140" alt="excel" srcset="https://loadtestweb.files.wordpress.com/2017/03/excel1.png 642w, https://loadtestweb.files.wordpress.com/2017/03/excel1.png?w=150 150w, https://loadtestweb.files.wordpress.com/2017/03/excel1.png?w=300 300w" sizes="(max-width: 642px) 100vw, 642px"   /></p>
+<p>Для загрузки текстов из файла в переменную рекомендуется использовать <strong>HTTP Simple Table Server</strong>:</p>
+<ul>
+<li><a href="https://jmeter-plugins.org/wiki/HttpSimpleTableServer/" target="_blank">HTTP Simple Table Server</a>.</li>
+</ul>
+<p>Причина почему не подойдёт стандартный компонент <strong>CSV Data Set Config</strong> &#8212; сервер проверяет, то, что пользователь уже отправлял комментарий с таким же текстом. А если дважды запустить тест, который берёт комментарии из файла с помощью <strong>CSV Data Set Config</strong>, то дважды начнут выбираться комментарии из начала файла. И при повторной отправке wordpress вернёт ответ &#8212; такой комментарий уже был и комментарий не добавится.</p>
+<blockquote><p>Ошибка при отправке комментария</p>
+<p>Обнаружен дубликат комментария. Кажется, вы уже сказали это!</p></blockquote>
+<p>А с использованием <strong>HTTP Simple Table Server</strong> можно организовать ротацию комментариев. Читать комментарии из начала и добавлять их в конец таблицы. Комментариев 3675 в файле. За 5-ти минутный тест отправляется 10-15 комментариев. Поэтому файла хватит на сотни отладочных запусков.</p>
+<p>Вторая причина использования <strong>HTTP Simple Table Server </strong>в том, что в <strong>HP LoadRunner</strong> работа с тестовыми данными осуществляется через <strong>Virtual Table Server</strong>. И чтобы привыкнуть к такому подходу, и сравнить удобство работы <strong>Jmeter</strong> vs <strong>LoadRunner</strong> тут рекомендуется использовать <strong>HTTP Simple Table Server</strong>.</p>
+<h1>Логин, email, страница &#8230;</h1>
+<h2>Вариант через <strong>CSV Data Set Config</strong></h2>
+<p>Можно для загрузки всех данных использовать компонент <strong>CSV Data Set Config</strong>:</p>
+<ul>
+<li>Один для выбора значений полей для комментирования (в файле будут строки с тремя колонками тестовых данных, в данном случае):
+<ul>
+<li>email</li>
+<li>author</li>
+<li>url</li>
+</ul>
+</li>
+<li>Один для добавления авторизованного комментария (в файле будет одна пара логин/пароль):
+<ul>
+<li>login</li>
+<li>password</li>
+</ul>
+</li>
+<li>Также можно создать файл со списком страниц, к которым нужно оставить комментарий и также загружать это значение из файла:
+<ul>
+<li>адрес страницы, к которой надо оставлять комментарий (<code>/2017/02/25/test-9/</code>)</li>
+</ul>
+</li>
+</ul>
+<p>Преимущества: теоретически можно расширять состав учётных данных, которые будут использоваться для комментирования и тест будет отправлять комментарии уже от двух, трёх, &#8230; пользователей к двум, трём, &#8230; страницам.</p>
+<h2>Вариант через переменные и файл свойств</h2>
+<p>Если не заглядывать в будущее и не закладывать возможность расширения списка учётных данных и страниц, то можно все значения задать в единственном экземпляре. Используя для этого переменные.</p>
+<p>Можно добавить значения параметров в конфигурационный файл. Например, назвать его <strong>loadtest.properties</strong>, для примера смотри файл <code>apache-jmeter-3.1\bin\user.properties</code>, заполнить файл как-то так:</p>
+<pre><code>loadtest.testPage=/2017/02/25/test-9/
+
+loadtest.email=tectep@inbpx.ru
+loadtest.author=tectep
+loadtest.url=http://mail.ru
+
+loadtest.worpress.login=secretLogin
+loadtest.worpress.password=************
+</code></pre>
+<p>Разместить файл рядом с файлом скрипта. А в bat-файл запуска <strong>JMeter</strong> добавить параметр: <code>--addprop loadtest.properties</code></p>
+<p>После чего все properties, указанные в файле, будут доступны в <strong>JMeter</strong>, с помощью функции получения значений свойств <strong>property</strong>:</p>
+<pre><code>${__property(loadtest.testPage,,/2017/02/25/test-9/)}
+${__property(loadtest.email,,tectep@inbpx.ru)}
+${__property(loadtest.author,,tectep)}
+${__property(loadtest.url,,http://mail.ru)}
+${__property(loadtest.worpress.login,,login)}
+${__property(loadtest.worpress.password,,*****)}
+</code></pre>
+<p>Используя таблицу <strong>User Defined Variables</strong> в корневом компоненте <strong>Test Plan</strong> можно сразу задавать значения нужных переменных. В качестве значения брать значение из файла с properties.</p>
+<p>Например задать переменную с именем:</p>
+<pre><code>loadtest_testPage</code></pre>
+<p>В качестве значения указать:</p>
+<pre><code>${__property(loadtest.testPage,,/2017/02/25/test-9/)}</code></pre>
+<p>А потом получить значения переменной в тесте, везде, где нужно:</p>
+<pre><code>${loadtest_testPage}</code></pre>
+<h1>Корреляция параметров формы</h1>
+<p>При отправке комментария серверу передаётся большое количество полей. Среди них есть несколько CSRF-токенов, их имена содержат строку &#171;nonce&#187;. CSRF-токены генерируются индивидуально для пользователя, открывшего страницу и ожидается, что пользователь передаст их серверу вместе с комментарием. Это будет признаком того, что пользователь действительно открыл страицу сайта и не является роботом-спаммером, отправляющим комментарии.</p>
+<p>Эти токены нужно обязательно скоррелировать:</p>
+<ol>
+<li>Найти в ответе на какой запрос они приходят от сервера. Удобно воспользоваться консолью браузера или использовать полнотекстовый поиск в прокси-сервере Fiddler4:
+<ul>
+<li><a href="https://www.telerik.com/docs/default-source/fiddler/fiddlersetup.exe?sfvrsn=4" target="_blank">Fiddler4</a>.</li>
+</ul>
+</li>
+<li>Добавить в нагрузочный скрипт компонент для выполнения такого запроса:
+<ul>
+<li><a href="http://jmeter.apache.org/usermanual/component_reference.html#HTTP_Request" target="_blank">HTTP Request</a>.</li>
+</ul>
+</li>
+<li>Добавить Post Processor-ы, для извлечения значений полей, которые нужно передавать при отправке комментариев. Рекомендуется использовать:
+<ul>
+<li><a href="http://jmeter.apache.org/usermanual/component_reference.html#CSS/JQuery_Extractor" target="_blank">CSS/JQuery Extractor</a> (простой и понятный синтаксис селекторов);</li>
+<li><a href="http://jmeter.apache.org/usermanual/component_reference.html#Regular_Expression_Extractor" target="_blank">Regular Expression Extractor</a> (синтаксис сложнее, но очень быстро работает).</li>
+</ul>
+</li>
+<li>Добавить в нагрузочный скрипт компонент для отправки комментария, с передачей CSRF-токенов, идентификатора статьи к которой отправляется комментарий, текста комментария, информации о пользователе.</li>
+</ol>
+<p>Речь о тегах <strong>input</strong> и <strong>textarea</strong> с уникальными значениями атрибутов <strong>id</strong> и <strong>name</strong>, которые можно использовать как селекторы:</p>
+<pre>&lt;input type="hidden" id="highlander_comment_nonce" name="highlander_comment_nonce" value="ceddc7c48c"&gt;
+&lt;input type="hidden" name="_wp_http_referer" value="/2017/03/12/%d0%ba%d0%be%d0%bd%d1%82%d1%80%d0%be%d0%bb%d1%8c-%d0%b2%d0%b5%d1%80%d1%81%d0%b8%d0%b9/"&gt;
+&lt;input type="hidden" name="hc_post_as" id="hc_post_as" value="guest"&gt;
+&lt;textarea id="comment" name="comment" title="Введите свой комментарий..." placeholder="Введите свой комментарий..." style="height: 41px; overflow: hidden; word-wrap: break-word; resize: none;"&gt;&lt;/textarea&gt;
+&lt;input id="email" name="email" type="email" value="tectep01@test.test"&gt;
+&lt;input id="author" name="author" type="text" value="Tectep 01"&gt;
+&lt;input id="url" name="url" type="url" value="http://pflb.ru"&gt;
+&lt;input type="hidden" name="wp_avatar" id="wordpress-avatar" class="comment-meta-wordpress" value=""&gt;
+&lt;input type="hidden" name="wp_user_id" id="wordpress-user_id" class="comment-meta-wordpress" value=""&gt;
+&lt;input type="hidden" name="wp_access_token" id="wordpress-access_token" class="comment-meta-wordpress" value=""&gt;
+&lt;input type="hidden" name="twitter_avatar" id="twitter-avatar" class="comment-meta-twitter" value=""&gt;
+&lt;input type="hidden" name="twitter_user_id" id="twitter-user_id" class="comment-meta-twitter" value=""&gt;
+&lt;input type="hidden" name="twitter_access_token" id="twitter-access_token" class="comment-meta-twitter" value=""&gt;
+&lt;input type="hidden" name="fb_avatar" id="facebook-avatar" class="comment-meta-facebook" value=""&gt;
+&lt;input type="hidden" name="fb_user_id" id="facebook-user_id" class="comment-meta-facebook" value=""&gt;
+&lt;input type="hidden" name="fb_access_token" id="facebook-access_token" class="comment-meta-facebook" value=""&gt;
+&lt;input type="hidden" name="googleplus_avatar" id="googleplus-avatar" class="comment-meta-googleplus" value=""&gt;
+&lt;input type="hidden" name="googleplus_user_id" id="googleplus-user_id" class="comment-meta-googleplus" value=""&gt;
+&lt;input type="hidden" name="googleplus_access_token" id="googleplus-access_token" class="comment-meta-googleplus" value=""&gt;
+&lt;input type="checkbox" name="subscribe" id="subscribe" value="subscribe" style="width: auto;"&gt;
+&lt;input type="checkbox" name="subscribe_blog" id="subscribe_blog" value="subscribe" style="width: auto;"&gt;
+&lt;input type="checkbox" name="subscribe" id="subscribe" value="subscribe" style="width: auto;"&gt;
+&lt;input type="checkbox" name="subscribe_blog" id="subscribe_blog" value="subscribe" style="width: auto;"&gt;
+&lt;input name="submit" type="submit" id="comment-submit" class="submit" value="Отправить"&gt;
+&lt;input type="hidden" name="comment_post_ID" value="346" id="comment_post_ID"&gt;
+&lt;input name="submit" type="submit" id="comment-submit" class="submit" value="Отправить"&gt;
+&lt;input type="hidden" name="comment_post_ID" value="346" id="comment_post_ID"&gt;
+&lt;input type="hidden" name="comment_parent" id="comment_parent" value="0"&gt;
+&lt;input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="dcaaa6e13e"&gt;
+&lt;input type="hidden" name="genseq" value="1489728836"&gt;
+&lt;input type="hidden" id="ak_js" name="ak_js" value="1489728835549"&gt;</pre>
+<p>Комментарий достаточно отправлять к статье, комментарий верхнего уровня. Отправлять комментарий к комментарию не нужно.</p>
+<p>Пример выбора значения атрибута <strong>value</strong> из тега <strong>input</strong> с <strong>id</strong> / <strong>name</strong> = <code>highlander_comment_nonce</code> с помощью <strong>CSS/JQuery Extractor</strong>:</p>
+<ul>
+<li><strong>Reference Name</strong>: <code>highlander_comment_nonce</code></li>
+<li><strong>CSS/JQuery expression</strong>:
+<ul>
+<li><code>input#highlander_comment_nonce</code></li>
+<li><code>#highlander_comment_nonce</code></li>
+<li><code>input[name='highlander_comment_nonce']</code></li>
+<li><code>input[id='highlander_comment_nonce']</code></li>
+</ul>
+</li>
+<li><strong>Attribute</strong>: <code>value</code></li>
+<li><strong>Match No. (0 for Random)</strong>: <code>1</code></li>
+<li><strong>Default Value</strong>:</li>
+</ul>
+<p>После чего в переменной <strong><code>${highlander_comment_nonce}</code></strong> будет значение атрибута <strong><code>value</code></strong> = <code>4afc63c8f</code>.</p><br />  <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gocomments/loadtestweb.wordpress.com/229/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/comments/loadtestweb.wordpress.com/229/" /></a> <img alt="" border="0" src="https://pixel.wp.com/b.gif?host=loadtestweb.wordpress.com&#038;blog=124701137&#038;post=229&#038;subd=loadtestweb&#038;ref=&#038;feed=1" width="1" height="1" />]]></content:encoded>
+			<wfw:commentRss>https://loadtestweb.wordpress.com/2017/03/02/%d0%b7%d0%b0%d0%b4%d0%b0%d0%bd%d0%b8%d0%b5-4-%d0%be%d1%81%d1%82%d0%b0%d0%b2%d0%b8%d1%82%d1%8c-%d0%ba%d0%be%d0%bc%d0%bc%d0%b5%d0%bd%d1%82%d0%b0%d1%80%d0%b8%d0%b9-%d0%ba-%d1%81%d1%82%d0%b0%d1%82%d1%8c/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	
+		<media:thumbnail url="https://loadtestweb.files.wordpress.com/2017/03/on-desktop-com-4.jpg" />
+		<media:content url="http://loadtestweb.files.wordpress.com/2017/03/on-desktop-com-4.jpg" medium="image">
+			<media:title type="html">on-desktop-com-4</media:title>
+		</media:content>
+
+		<media:content url="http://0.gravatar.com/avatar/993da3fa683fc7e2af464c5b9886609f?s=96&#38;d=identicon&#38;r=G" medium="image">
+			<media:title type="html">loadtestweb</media:title>
+		</media:content>
+
+		<media:content url="http://loadtestweb.files.wordpress.com/2017/03/sublime-text-2.png" medium="image">
+			<media:title type="html">sublime-text-2</media:title>
+		</media:content>
+
+		<media:content url="http://loadtestweb.files.wordpress.com/2017/03/excel1.png" medium="image">
+			<media:title type="html">excel</media:title>
+		</media:content>
+	</item>
+		<item>
+		<title>Задание 3. Открыть статью (html-страница)</title>
+		<link>https://loadtestweb.wordpress.com/2017/03/02/%d0%b7%d0%b0%d0%b4%d0%b0%d0%bd%d0%b8%d0%b5-3-%d0%b7%d0%b0%d0%b3%d1%80%d1%83%d0%b7%d0%ba%d0%b0-html-%d1%81%d1%82%d1%80%d0%b0%d0%bd%d0%b8%d1%86%d1%8b-%d0%b2-apache-jmeter/</link>
+		<comments>https://loadtestweb.wordpress.com/2017/03/02/%d0%b7%d0%b0%d0%b4%d0%b0%d0%bd%d0%b8%d0%b5-3-%d0%b7%d0%b0%d0%b3%d1%80%d1%83%d0%b7%d0%ba%d0%b0-html-%d1%81%d1%82%d1%80%d0%b0%d0%bd%d0%b8%d1%86%d1%8b-%d0%b2-apache-jmeter/#respond</comments>
+		<pubDate>Wed, 01 Mar 2017 21:48:53 +0000</pubDate>
+		<dc:creator><![CDATA[loadtestweb]]></dc:creator>
+				<category><![CDATA[Задание по школе тестирования]]></category>
+		<category><![CDATA[Задание]]></category>
+
+		<guid isPermaLink="false">http://loadtestweb.wordpress.com/?p=217</guid>
+		<description><![CDATA[Про картинки и другие файлы<img alt="" border="0" src="https://pixel.wp.com/b.gif?host=loadtestweb.wordpress.com&#038;blog=124701137&#038;post=217&#038;subd=loadtestweb&#038;ref=&#038;feed=1" width="1" height="1" />]]></description>
+				<content:encoded><![CDATA[<p>Есть <a href="https://loadtestweb.wordpress.com/category/%d1%82%d0%b5%d1%81%d1%82%d0%be%d0%b2%d0%b0%d1%8f-%d1%81%d1%82%d1%80%d0%b0%d0%bd%d0%b8%d1%86%d0%b0/" target="_blank">набор тестовых страниц</a>. У каждого своя страница для экспериментов.</p>
+<p>Задача: имитировать в Apache.JMeter открытие своей статьи.</p>
+<p>Например, при открытии статьи <a href="https://loadtestweb.wordpress.com/2017/03/01/%d0%b7%d0%b0%d0%b4%d0%b0%d0%bd%d0%b8%d0%b5-1-%d1%80%d0%b0%d0%b1%d0%be%d1%82%d0%b0-%d1%81-xml-%d0%b2-jmeter/" target="_blank">Задание 1. Работа с XML в JMeter</a> браузер <strong>Mozilla Firefox</strong> отправляет 102 запроса.</p>
+<p><a href="https://loadtestweb.files.wordpress.com/2017/03/2017-03-02_01-04-47.png"><img data-attachment-id="224" data-permalink="https://loadtestweb.wordpress.com/2017/03/02/%d0%b7%d0%b0%d0%b4%d0%b0%d0%bd%d0%b8%d0%b5-3-%d0%b7%d0%b0%d0%b3%d1%80%d1%83%d0%b7%d0%ba%d0%b0-html-%d1%81%d1%82%d1%80%d0%b0%d0%bd%d0%b8%d1%86%d1%8b-%d0%b2-apache-jmeter/2017-03-02_01-04-47/" data-orig-file="https://loadtestweb.files.wordpress.com/2017/03/2017-03-02_01-04-47.png?w=1140" data-orig-size="1360,1012" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="2017-03-02_01-04-47" data-image-description="" data-medium-file="https://loadtestweb.files.wordpress.com/2017/03/2017-03-02_01-04-47.png?w=1140?w=300" data-large-file="https://loadtestweb.files.wordpress.com/2017/03/2017-03-02_01-04-47.png?w=1140?w=1024" class="alignnone size-full wp-image-224" src="https://loadtestweb.files.wordpress.com/2017/03/2017-03-02_01-04-47.png?w=1140" alt="2017-03-02_01-04-47" srcset="https://loadtestweb.files.wordpress.com/2017/03/2017-03-02_01-04-47.png?w=1140 1140w, https://loadtestweb.files.wordpress.com/2017/03/2017-03-02_01-04-47.png?w=150 150w, https://loadtestweb.files.wordpress.com/2017/03/2017-03-02_01-04-47.png?w=300 300w, https://loadtestweb.files.wordpress.com/2017/03/2017-03-02_01-04-47.png?w=768 768w, https://loadtestweb.files.wordpress.com/2017/03/2017-03-02_01-04-47.png?w=1024 1024w, https://loadtestweb.files.wordpress.com/2017/03/2017-03-02_01-04-47.png 1360w" sizes="(max-width: 1140px) 100vw, 1140px"   /></a></p>
+<p>Один запрос для загрузки html-содержимого страницы. И 101 дополнительный запрос.</p>
+<p>Не каждый дополнительный запрос важен для нагрузочного тестирования. Можно проанализировать запросы с каким доменам выполняются. И если осуществляется нагрузочное тестирование конкретного сервиса, то запросы к внешним системам, часто нужно исключить из профиля нагрузки. В нашем случае, есть запросы к facebook, к wordpress, к gavatar, &#8230;</p>
+<p><a href="https://loadtestweb.files.wordpress.com/2017/03/2017-03-02_01-15-241.png"><img data-attachment-id="226" data-permalink="https://loadtestweb.wordpress.com/2017/03/02/%d0%b7%d0%b0%d0%b4%d0%b0%d0%bd%d0%b8%d0%b5-3-%d0%b7%d0%b0%d0%b3%d1%80%d1%83%d0%b7%d0%ba%d0%b0-html-%d1%81%d1%82%d1%80%d0%b0%d0%bd%d0%b8%d1%86%d1%8b-%d0%b2-apache-jmeter/2017-03-02_01-15-24-2/" data-orig-file="https://loadtestweb.files.wordpress.com/2017/03/2017-03-02_01-15-241.png?w=1140" data-orig-size="766,479" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="2017-03-02_01-15-24" data-image-description="" data-medium-file="https://loadtestweb.files.wordpress.com/2017/03/2017-03-02_01-15-241.png?w=1140?w=300" data-large-file="https://loadtestweb.files.wordpress.com/2017/03/2017-03-02_01-15-241.png?w=1140?w=766" class="alignnone size-full wp-image-226" src="https://loadtestweb.files.wordpress.com/2017/03/2017-03-02_01-15-241.png?w=1140" alt="2017-03-02_01-15-24" srcset="https://loadtestweb.files.wordpress.com/2017/03/2017-03-02_01-15-241.png 766w, https://loadtestweb.files.wordpress.com/2017/03/2017-03-02_01-15-241.png?w=150 150w, https://loadtestweb.files.wordpress.com/2017/03/2017-03-02_01-15-241.png?w=300 300w" sizes="(max-width: 766px) 100vw, 766px"   /></a></p>
+<p>Запросы к каждой из группы доменов вносит вклад в длительность открытия страницы. Но часто к некоторым доменам отправлять запросы во время нагрузочного тестирования ну нужно. Особенно при большой интенсивности запросов. Такое решение может быть принято на усмотрение инженера, разрабатывающего тест. Или может быть требование со стороны заказчика или владельца какой-то группы доменов.</p>
+<p>Чтобы эмулировать загрузку встроенных ресурсов в компоненте <strong>HTTP Request</strong> есть возможность распарсить HTML/CSS-содержимое и загрузить объекты по ссылкам:</p>
+<ul>
+<li><a href="http://jmeter.apache.org/usermanual/component_reference#HTTP_Request" target="_blank">HTTP Request</a></li>
+</ul>
+<p>Изображение из документации:</p>
+<p><a href="https://loadtestweb.files.wordpress.com/2017/03/http-request-advanced-tab.png"><img data-attachment-id="236" data-permalink="https://loadtestweb.wordpress.com/2017/03/02/%d0%b7%d0%b0%d0%b4%d0%b0%d0%bd%d0%b8%d0%b5-3-%d0%b7%d0%b0%d0%b3%d1%80%d1%83%d0%b7%d0%ba%d0%b0-html-%d1%81%d1%82%d1%80%d0%b0%d0%bd%d0%b8%d1%86%d1%8b-%d0%b2-apache-jmeter/http-request-advanced-tab/" data-orig-file="https://loadtestweb.files.wordpress.com/2017/03/http-request-advanced-tab.png?w=1140" data-orig-size="951,284" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="http-request-advanced-tab" data-image-description="" data-medium-file="https://loadtestweb.files.wordpress.com/2017/03/http-request-advanced-tab.png?w=1140?w=300" data-large-file="https://loadtestweb.files.wordpress.com/2017/03/http-request-advanced-tab.png?w=1140?w=951" class="alignnone size-full wp-image-236" src="https://loadtestweb.files.wordpress.com/2017/03/http-request-advanced-tab.png?w=1140" alt="http-request-advanced-tab" srcset="https://loadtestweb.files.wordpress.com/2017/03/http-request-advanced-tab.png 951w, https://loadtestweb.files.wordpress.com/2017/03/http-request-advanced-tab.png?w=150 150w, https://loadtestweb.files.wordpress.com/2017/03/http-request-advanced-tab.png?w=300 300w, https://loadtestweb.files.wordpress.com/2017/03/http-request-advanced-tab.png?w=768 768w" sizes="(max-width: 951px) 100vw, 951px"   /></a></p>
+<p>Нужно самостоятельно оценить, как много подзапросов при таком способе выполняется.</p>
+<p>Некоторые запросы, которые отправляются средствами javascript точно не будут отправляться. Нужо оценить как много их, предложить какое-то решение или обосновать, что ничего делать не надо.</p>
+<p><a href="https://loadtestweb.files.wordpress.com/2017/03/2017-03-02_09-32-57.png"><img data-attachment-id="237" data-permalink="https://loadtestweb.wordpress.com/2017/03/02/%d0%b7%d0%b0%d0%b4%d0%b0%d0%bd%d0%b8%d0%b5-3-%d0%b7%d0%b0%d0%b3%d1%80%d1%83%d0%b7%d0%ba%d0%b0-html-%d1%81%d1%82%d1%80%d0%b0%d0%bd%d0%b8%d1%86%d1%8b-%d0%b2-apache-jmeter/2017-03-02_09-32-57/" data-orig-file="https://loadtestweb.files.wordpress.com/2017/03/2017-03-02_09-32-57.png?w=1140" data-orig-size="1340,993" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="2017-03-02_09-32-57" data-image-description="" data-medium-file="https://loadtestweb.files.wordpress.com/2017/03/2017-03-02_09-32-57.png?w=1140?w=300" data-large-file="https://loadtestweb.files.wordpress.com/2017/03/2017-03-02_09-32-57.png?w=1140?w=1024" class="alignnone size-full wp-image-237" src="https://loadtestweb.files.wordpress.com/2017/03/2017-03-02_09-32-57.png?w=1140" alt="2017-03-02_09-32-57" srcset="https://loadtestweb.files.wordpress.com/2017/03/2017-03-02_09-32-57.png?w=1140 1140w, https://loadtestweb.files.wordpress.com/2017/03/2017-03-02_09-32-57.png?w=150 150w, https://loadtestweb.files.wordpress.com/2017/03/2017-03-02_09-32-57.png?w=300 300w, https://loadtestweb.files.wordpress.com/2017/03/2017-03-02_09-32-57.png?w=768 768w, https://loadtestweb.files.wordpress.com/2017/03/2017-03-02_09-32-57.png?w=1024 1024w, https://loadtestweb.files.wordpress.com/2017/03/2017-03-02_09-32-57.png 1340w" sizes="(max-width: 1140px) 100vw, 1140px"   /></a></p>
+<p>Вот такие запросы простановкой галочки в <strong>HTTP Request</strong> не повторить.</p>
+<p><span style="color:#999999;">Использовано изображение с сайта artleo.com.</span></p><br />  <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gocomments/loadtestweb.wordpress.com/217/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/comments/loadtestweb.wordpress.com/217/" /></a> <img alt="" border="0" src="https://pixel.wp.com/b.gif?host=loadtestweb.wordpress.com&#038;blog=124701137&#038;post=217&#038;subd=loadtestweb&#038;ref=&#038;feed=1" width="1" height="1" />]]></content:encoded>
+			<wfw:commentRss>https://loadtestweb.wordpress.com/2017/03/02/%d0%b7%d0%b0%d0%b4%d0%b0%d0%bd%d0%b8%d0%b5-3-%d0%b7%d0%b0%d0%b3%d1%80%d1%83%d0%b7%d0%ba%d0%b0-html-%d1%81%d1%82%d1%80%d0%b0%d0%bd%d0%b8%d1%86%d1%8b-%d0%b2-apache-jmeter/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	
+		<media:thumbnail url="https://loadtestweb.files.wordpress.com/2017/03/artleo-com-47280.jpg" />
+		<media:content url="http://loadtestweb.files.wordpress.com/2017/03/artleo-com-47280.jpg" medium="image">
+			<media:title type="html">artleo-com-47280</media:title>
+		</media:content>
+
+		<media:content url="http://0.gravatar.com/avatar/993da3fa683fc7e2af464c5b9886609f?s=96&#38;d=identicon&#38;r=G" medium="image">
+			<media:title type="html">loadtestweb</media:title>
+		</media:content>
+
+		<media:content url="http://loadtestweb.files.wordpress.com/2017/03/2017-03-02_01-04-47.png" medium="image">
+			<media:title type="html">2017-03-02_01-04-47</media:title>
+		</media:content>
+
+		<media:content url="http://loadtestweb.files.wordpress.com/2017/03/2017-03-02_01-15-241.png" medium="image">
+			<media:title type="html">2017-03-02_01-15-24</media:title>
+		</media:content>
+
+		<media:content url="http://loadtestweb.files.wordpress.com/2017/03/http-request-advanced-tab.png" medium="image">
+			<media:title type="html">http-request-advanced-tab</media:title>
+		</media:content>
+
+		<media:content url="http://loadtestweb.files.wordpress.com/2017/03/2017-03-02_09-32-57.png" medium="image">
+			<media:title type="html">2017-03-02_09-32-57</media:title>
+		</media:content>
+	</item>
+		<item>
+		<title>Задание 2. Работа с JSON в Apache.JMeter</title>
+		<link>https://loadtestweb.wordpress.com/2017/03/02/%d0%b7%d0%b0%d0%b4%d0%b0%d0%bd%d0%b8%d0%b5-2-%d1%80%d0%b0%d0%b1%d0%be%d1%82%d0%b0-%d1%81-json-%d0%b2-apache-jmeter/</link>
+		<comments>https://loadtestweb.wordpress.com/2017/03/02/%d0%b7%d0%b0%d0%b4%d0%b0%d0%bd%d0%b8%d0%b5-2-%d1%80%d0%b0%d0%b1%d0%be%d1%82%d0%b0-%d1%81-json-%d0%b2-apache-jmeter/#comments</comments>
+		<pubDate>Wed, 01 Mar 2017 21:34:00 +0000</pubDate>
+		<dc:creator><![CDATA[loadtestweb]]></dc:creator>
+				<category><![CDATA[Задание по школе тестирования]]></category>
+		<category><![CDATA[Задание]]></category>
+
+		<guid isPermaLink="false">http://loadtestweb.wordpress.com/?p=188</guid>
+		<description><![CDATA[Нажать кнопку Предыдущие записи<img alt="" border="0" src="https://pixel.wp.com/b.gif?host=loadtestweb.wordpress.com&#038;blog=124701137&#038;post=188&#038;subd=loadtestweb&#038;ref=&#038;feed=1" width="1" height="1" />]]></description>
+				<content:encoded><![CDATA[<h1>Задание</h1>
+<p>На стартовой странице сайта есть кнопка <em><span style="text-decoration:underline;"><strong>Предыдущие записи</strong></span></em>, при нажатии на которую отправляет POST-запрос, а в ответ возвращается JSON-документ. В веб-браузере код на JavaScript обрабатывает json-документ и в результате видны предыдущие записи на странице.</p>
+<figure data-shortcode="caption" id="attachment_198" style="width: 1165px" class="wp-caption alignnone"><a href="https://loadtestweb.files.wordpress.com/2017/03/2017-03-02_00-17-45.png" target="_blank"><img data-attachment-id="198" data-permalink="https://loadtestweb.wordpress.com/2017/03/02/%d0%b7%d0%b0%d0%b4%d0%b0%d0%bd%d0%b8%d0%b5-2-%d1%80%d0%b0%d0%b1%d0%be%d1%82%d0%b0-%d1%81-json-%d0%b2-apache-jmeter/2017-03-02_00-17-45/" data-orig-file="https://loadtestweb.files.wordpress.com/2017/03/2017-03-02_00-17-45.png?w=1140" data-orig-size="1165,523" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="2017-03-02_00-17-45" data-image-description="" data-medium-file="https://loadtestweb.files.wordpress.com/2017/03/2017-03-02_00-17-45.png?w=1140?w=300" data-large-file="https://loadtestweb.files.wordpress.com/2017/03/2017-03-02_00-17-45.png?w=1140?w=1024" class="alignnone size-full wp-image-198" src="https://loadtestweb.files.wordpress.com/2017/03/2017-03-02_00-17-45.png?w=1140" alt="2017-03-02_00-17-45" srcset="https://loadtestweb.files.wordpress.com/2017/03/2017-03-02_00-17-45.png?w=1140 1140w, https://loadtestweb.files.wordpress.com/2017/03/2017-03-02_00-17-45.png?w=150 150w, https://loadtestweb.files.wordpress.com/2017/03/2017-03-02_00-17-45.png?w=300 300w, https://loadtestweb.files.wordpress.com/2017/03/2017-03-02_00-17-45.png?w=768 768w, https://loadtestweb.files.wordpress.com/2017/03/2017-03-02_00-17-45.png?w=1024 1024w, https://loadtestweb.files.wordpress.com/2017/03/2017-03-02_00-17-45.png 1165w" sizes="(max-width: 1140px) 100vw, 1140px"   /></a><figcaption class="wp-caption-text">Кнопка <em><span style="text-decoration:underline;"><strong>Предыдущие записи</strong></span></em></figcaption></figure>
+<p>Задача: сэмулировать в <strong>Apache.JMeter</strong> нажатие кнопки <em><span style="text-decoration:underline;"><strong>Предыдущие записи</strong></span></em>, обработать ответ (получить список предыдущих записей), и открыть случайную запись из списка предыдущих.</p>
+<p>Это будет не тоже самое что делает браузер &#8212; браузер подгружает заголовки и миниатюры всех страниц из json-документа, делает несколько последующих запросов. А тестовое задание предполагает загрузку одной полной статьи из списка предыдущих, а не загрузку нескольких миниатюр. Тестовое задание обыгрывает более простую ситуацию.</p>
+<h1>Как записать запрос</h1>
+<p>Чтобы записать POST-запрос, выполняемый при нажатии кнопки <em><span style="text-decoration:underline;"><strong>Предыдущие записи</strong></span></em>, рекомендую использовать <strong>Fiddler 4</strong>. Как настроить работу браузера, через прокси-сервер написано в инструкции: <a href="https://loadtestweb.wordpress.com/2017/03/02/fiddler-4-%d0%bd%d0%b0%d1%81%d1%82%d1%80%d0%be%d0%b9%d0%ba%d0%b0-%d0%b8-%d0%b8%d1%81%d0%bf%d0%be%d0%bb%d1%8c%d0%b7%d0%be%d0%b2%d0%b0%d0%bd%d0%b8%d0%b5-%d1%81-https/" target="_blank">Fiddler 4. Настройка HTTPS</a>.</p>
+<p>При формировании запроса важны:</p>
+<ul>
+<li>адрес</li>
+<li>тип запроса &#8212; POST</li>
+<li>набор и значения параметров</li>
+</ul>
+<figure data-shortcode="caption" id="attachment_340" style="width: 1374px" class="wp-caption alignnone"><a href="https://loadtestweb.files.wordpress.com/2017/03/fiddler-json.png" target="_blank"><img data-attachment-id="340" data-permalink="https://loadtestweb.wordpress.com/2017/03/02/%d0%b7%d0%b0%d0%b4%d0%b0%d0%bd%d0%b8%d0%b5-2-%d1%80%d0%b0%d0%b1%d0%be%d1%82%d0%b0-%d1%81-json-%d0%b2-apache-jmeter/fiddler-json/" data-orig-file="https://loadtestweb.files.wordpress.com/2017/03/fiddler-json.png?w=1140" data-orig-size="1374,1080" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="fiddler.json" data-image-description="" data-medium-file="https://loadtestweb.files.wordpress.com/2017/03/fiddler-json.png?w=1140?w=300" data-large-file="https://loadtestweb.files.wordpress.com/2017/03/fiddler-json.png?w=1140?w=1024" class="alignnone size-full wp-image-340" src="https://loadtestweb.files.wordpress.com/2017/03/fiddler-json.png?w=1140" alt="Отображение JSON-ответа в Fiddler4" srcset="https://loadtestweb.files.wordpress.com/2017/03/fiddler-json.png?w=1140 1140w, https://loadtestweb.files.wordpress.com/2017/03/fiddler-json.png?w=150 150w, https://loadtestweb.files.wordpress.com/2017/03/fiddler-json.png?w=300 300w, https://loadtestweb.files.wordpress.com/2017/03/fiddler-json.png?w=768 768w, https://loadtestweb.files.wordpress.com/2017/03/fiddler-json.png?w=1024 1024w, https://loadtestweb.files.wordpress.com/2017/03/fiddler-json.png 1374w" sizes="(max-width: 1140px) 100vw, 1140px"   /></a><figcaption class="wp-caption-text">Отображение JSON-ответа в <strong>Fiddler 4</strong>. С вкладки <strong>WebForms</strong> удобно копировать параметры запроса. А с вкладки <strong>JSON</strong> удобно просматривать структуру ответа.</figcaption></figure>
+<h1>Корреляция параметров</h1>
+<p>При отправке запроса с ним отправляется также множество параметров, некоторые из которых важны для корректного выполнения запроса.</p>
+<table width="559">
+<tbody>
+<tr>
+<td width="320"><strong>Name</strong></td>
+<td width="239"><strong>Value</strong></td>
+</tr>
+<tr>
+<td width="320">action</td>
+<td width="239">infinite_scroll</td>
+</tr>
+<tr>
+<td width="320">page</td>
+<td width="239">1</td>
+</tr>
+<tr>
+<td width="320">currentday</td>
+<td width="239">25.02.2017</td>
+</tr>
+<tr>
+<td width="320">order</td>
+<td width="239">DESC</td>
+</tr>
+<tr>
+<td width="320">query_args[error]</td>
+<td width="239"></td>
+</tr>
+<tr>
+<td width="320">query_args[m]</td>
+<td width="239"></td>
+</tr>
+<tr>
+<td width="320">query_args[p]</td>
+<td width="239">0</td>
+</tr>
+<tr>
+<td width="320">query_args[post_parent]</td>
+<td width="239"></td>
+</tr>
+<tr>
+<td width="320">query_args[subpost]</td>
+<td width="239"></td>
+</tr>
+<tr>
+<td width="320">query_args[subpost_id]</td>
+<td width="239"></td>
+</tr>
+<tr>
+<td width="320">query_args[attachment]</td>
+<td width="239"></td>
+</tr>
+<tr>
+<td width="320">query_args[attachment_id]</td>
+<td width="239">0</td>
+</tr>
+<tr>
+<td width="320">query_args[name]</td>
+<td width="239"></td>
+</tr>
+<tr>
+<td width="320">query_args[static]</td>
+<td width="239"></td>
+</tr>
+<tr>
+<td width="320">query_args[pagename]</td>
+<td width="239"></td>
+</tr>
+<tr>
+<td width="320">query_args[page_id]</td>
+<td width="239">0</td>
+</tr>
+<tr>
+<td width="320">query_args[second]</td>
+<td width="239"></td>
+</tr>
+<tr>
+<td width="320">query_args[minute]</td>
+<td width="239"></td>
+</tr>
+<tr>
+<td width="320">query_args[hour]</td>
+<td width="239"></td>
+</tr>
+<tr>
+<td width="320">query_args[day]</td>
+<td width="239">0</td>
+</tr>
+<tr>
+<td width="320">query_args[monthnum]</td>
+<td width="239">0</td>
+</tr>
+<tr>
+<td width="320">query_args[year]</td>
+<td width="239">0</td>
+</tr>
+<tr>
+<td width="320">query_args[w]</td>
+<td width="239">0</td>
+</tr>
+<tr>
+<td width="320">query_args[category_name]</td>
+<td width="239"></td>
+</tr>
+<tr>
+<td width="320">query_args[tag]</td>
+<td width="239"></td>
+</tr>
+<tr>
+<td width="320">query_args[cat]</td>
+<td width="239"></td>
+</tr>
+<tr>
+<td width="320">query_args[tag_id]</td>
+<td width="239"></td>
+</tr>
+<tr>
+<td width="320">query_args[author]</td>
+<td width="239"></td>
+</tr>
+<tr>
+<td width="320">query_args[author_name]</td>
+<td width="239"></td>
+</tr>
+<tr>
+<td width="320">query_args[feed]</td>
+<td width="239"></td>
+</tr>
+<tr>
+<td width="320">query_args[tb]</td>
+<td width="239"></td>
+</tr>
+<tr>
+<td width="320">query_args[paged]</td>
+<td width="239">0</td>
+</tr>
+<tr>
+<td width="320">query_args[meta_key]</td>
+<td width="239"></td>
+</tr>
+<tr>
+<td width="320">query_args[meta_value]</td>
+<td width="239"></td>
+</tr>
+<tr>
+<td width="320">query_args[preview]</td>
+<td width="239"></td>
+</tr>
+<tr>
+<td width="320">query_args[s]</td>
+<td width="239"></td>
+</tr>
+<tr>
+<td width="320">query_args[sentence]</td>
+<td width="239"></td>
+</tr>
+<tr>
+<td width="320">query_args[title]</td>
+<td width="239"></td>
+</tr>
+<tr>
+<td width="320">query_args[fields]</td>
+<td width="239"></td>
+</tr>
+<tr>
+<td width="320">query_args[menu_order]</td>
+<td width="239"></td>
+</tr>
+<tr>
+<td width="320">query_args</td>
+<td width="239"></td>
+</tr>
+<tr>
+<td width="320">query_args[post__not_in][]</td>
+<td width="239">7</td>
+</tr>
+<tr>
+<td width="320">query_args[posts_per_page]</td>
+<td width="239">9</td>
+</tr>
+<tr>
+<td width="320">query_args[ignore_sticky_posts]</td>
+<td width="239">false</td>
+</tr>
+<tr>
+<td width="320">query_args[suppress_filters]</td>
+<td width="239">false</td>
+</tr>
+<tr>
+<td width="320">query_args[cache_results]</td>
+<td width="239">false</td>
+</tr>
+<tr>
+<td width="320">query_args[update_post_term_cache]</td>
+<td width="239">true</td>
+</tr>
+<tr>
+<td width="320">query_args[lazy_load_term_meta]</td>
+<td width="239">true</td>
+</tr>
+<tr>
+<td width="320">query_args[update_post_meta_cache]</td>
+<td width="239">true</td>
+</tr>
+<tr>
+<td width="320">query_args[post_type]</td>
+<td width="239"></td>
+</tr>
+<tr>
+<td width="320">query_args[nopaging]</td>
+<td width="239">false</td>
+</tr>
+<tr>
+<td width="320">query_args[comments_per_page]</td>
+<td width="239">50</td>
+</tr>
+<tr>
+<td width="320">query_args[no_found_rows]</td>
+<td width="239">false</td>
+</tr>
+<tr>
+<td width="320">query_args[order]</td>
+<td width="239">DESC</td>
+</tr>
+<tr>
+<td width="320">last_post_date</td>
+<td width="239">25.02.2017 21:51</td>
+</tr>
+</tbody>
+</table>
+<p>Их можно коррелировать. Делается однотипно. Можно, но не необязательно. Вполне допустимо использовать и константы.</p>
+<h1>Выбор случайной ссылки из JSON-ответа</h1>
+<h2>Применение JSON Path-выражений к JSON-документу</h2>
+<p>С помощью <strong>JSON </strong><strong>Extractor</strong> (<em>Post </em><em>Processor/ </em><em>JSON </em><em>Extractor</em>) нужно продемонстрировать извлечение ссылки на случайную статью.</p>
+<p>Для отладки json-выражения можно использовать инструменты:</p>
+<ul>
+<li><a href="http://jsonprettyprint.com" target="_blank">http://jsonprettyprint.com</a> для форматирования json-ответа, так проще написать селектор к json;</li>
+<li><a href="http://www.jsonquerytool.com/">http://www.jsonquerytool.com/</a> для отладки селектора, синтаксис селекторов есть в документации по ссылкам ниже.</li>
+</ul>
+<figure data-shortcode="caption" id="attachment_338" style="width: 1562px" class="wp-caption alignnone"><a href="https://loadtestweb.files.wordpress.com/2017/03/2017-03-11_14-08-00.png" target="_blank"><img data-attachment-id="338" data-permalink="https://loadtestweb.wordpress.com/2017/03/02/%d0%b7%d0%b0%d0%b4%d0%b0%d0%bd%d0%b8%d0%b5-2-%d1%80%d0%b0%d0%b1%d0%be%d1%82%d0%b0-%d1%81-json-%d0%b2-apache-jmeter/2017-03-11_14-08-00/" data-orig-file="https://loadtestweb.files.wordpress.com/2017/03/2017-03-11_14-08-00.png?w=1140" data-orig-size="1562,1038" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="2017-03-11_14-08-00" data-image-description="&lt;p&gt;www.jsonquerytool.com&lt;/p&gt;
+" data-medium-file="https://loadtestweb.files.wordpress.com/2017/03/2017-03-11_14-08-00.png?w=1140?w=300" data-large-file="https://loadtestweb.files.wordpress.com/2017/03/2017-03-11_14-08-00.png?w=1140?w=1024" class="alignnone size-full wp-image-338" src="https://loadtestweb.files.wordpress.com/2017/03/2017-03-11_14-08-00.png?w=1140" alt="www.jsonquerytool.com" srcset="https://loadtestweb.files.wordpress.com/2017/03/2017-03-11_14-08-00.png?w=1140 1140w, https://loadtestweb.files.wordpress.com/2017/03/2017-03-11_14-08-00.png?w=150 150w, https://loadtestweb.files.wordpress.com/2017/03/2017-03-11_14-08-00.png?w=300 300w, https://loadtestweb.files.wordpress.com/2017/03/2017-03-11_14-08-00.png?w=768 768w, https://loadtestweb.files.wordpress.com/2017/03/2017-03-11_14-08-00.png?w=1024 1024w, https://loadtestweb.files.wordpress.com/2017/03/2017-03-11_14-08-00.png 1562w" sizes="(max-width: 1140px) 100vw, 1140px"   /></a><figcaption class="wp-caption-text">Подбор JSON Path-выражения в online-инструменте</figcaption></figure>
+<p>Пример json-ответа, на котором можно тренироваться:</p>
+<pre>{
+   "type": "success",
+   "html": "none",
+   "lastbatch": false,
+   "currentday": "25.02.17",
+   "postflair": {
+       "https:\/\/loadtestweb.wordpress.com\/2017\/02\/25\/test-6\/": 90,
+       "https:\/\/loadtestweb.wordpress.com\/2017\/02\/25\/test-5\/": 86,
+       "https:\/\/loadtestweb.wordpress.com\/2017\/02\/25\/test-4\/": 77
+   }
+}</pre>
+<p>Полезная статья:</p>
+<ul>
+<li><a href="https://www.blazemeter.com/blog/advanced-usage-json-path-extractor-jmeter" target="_blank">https://www.blazemeter.com/blog/advanced-usage-json-path-extractor-jmeter</a></li>
+</ul>
+<p>Документация:</p>
+<ul>
+<li>компонент<strong><a href="https://jmeter-plugins.org/wiki/JSONPathExtractor/" target="_blank"> JSON Path Extractor</a></strong>.</li>
+</ul>
+<p>Синтаксис для получения значений:</p>
+<ul>
+<li><a href="http://goessner.net/articles/JsonPath/index.html#e2" target="_blank">http://goessner.net/articles/JsonPath/index.html#e2</a></li>
+</ul>
+<p>JSON-селектор для поля <strong>postflair</strong> получит словарь, где ключами будут ссылки на страницы. Попробуйте разные JSON-селекторы, используя <a href="http://www.jsonquerytool.com/" target="_blank">http://www.jsonquerytool.com/</a> и получаемый JSON-ответ. Должно получиться что-то такое:</p>
+<pre>    {
+        "https:\/\/loadtestweb.wordpress.com\/2017\/02\/25\/test-6\/": 90,
+        "https:\/\/loadtestweb.wordpress.com\/2017\/02\/25\/test-5\/": 86,
+        "https:\/\/loadtestweb.wordpress.com\/2017\/02\/25\/test-4\/": 77,
+    }</pre>
+<h2>Применение регулярных выражений</h2>
+<p>В данном случае, возможностей JSON Path-выражений недостаточно, для получения нужной ссылки (мне так кажется, если сумеете сделать выборку ссылки только на JSON Path &#8212; будет здорово).</p>
+<p>Значение ссылки является именем поля, заключенным в двойные кавычки. Для извлечения текста между двумя двойными кавычками можно использовать регулярные выражения:</p>
+<ul>
+<li><a href="http://jmeter.apache.org/usermanual/regular_expressions.html" target="_blank">http://jmeter.apache.org/usermanual/regular_expressions.html</a></li>
+</ul>
+<p>А возможность компонента <strong>Regular Expression Extractor</strong> позволяет сразу выбрать случайное значение из результатов выборки:</p>
+<ul>
+<li><strong><a href="http://jmeter.apache.org/usermanual/component_reference.html#Regular_Expression_Extractor" target="_blank">Regular Expression Extractor</a></strong>.</li>
+</ul>
+<p>Регулярное выражение можно применить к значению переменной. <strong>Regular Expression Extractor</strong> (<em>Post Processor/ Regular Expression Extractor</em>) может работать со значениями указанной переменной (поле <strong>Jmeter Variable</strong>).</p>
+<p>Значит можно в <strong>JSON Path Extractor</strong> извлечь нужный кусок JSON-документа в переменную, а потом извлечь нужный случайный кусок из переменной с помощью <strong>Regular Expression Extractor</strong>.</p>
+<h2>Примение javaScript на примере обратного экранирования</h2>
+<p>В инструменте <a href="http://www.jsonquerytool.com" rel="nofollow">http://www.jsonquerytool.com</a> автоматически выполнится обратное экранирование и ссылки будут выглядеть сразу так:</p>
+<pre>"https://loadtestweb.wordpress.com/2017/02/25/test-5/"</pre>
+<p>В компоненте <strong>JSON Path Extractor</strong> автоматического обратного экранирования не происходит и ссылки выглядят так:</p>
+<pre>"https:\/\/loadtestweb.wordpress.com\/2017\/02\/25\/test-5\/"</pre>
+<p>Пусть с помощью регулярного выражения мы извлекли случайную ссылку в переменную <strong>postflairURL</strong>.</p>
+<p>Тогда с помощью функции <strong>__javaScript</strong> можно избавиться от экранирования, получив значение строки:</p>
+<pre>${__javaScript(${postflairURL},)}</pre>
+<p>Документация:</p>
+<ul>
+<li>функция <strong><a href="http://jmeter.apache.org/usermanual/functions.html#__javaScript" target="_blank">__javaScript</a></strong>.</li>
+</ul>
+<p>Можно полностью выборку ссылки из json-документа сделать на javaScript и тогда не надо будет использовать <strong>JSON Path Extractor</strong> и <strong>Regular Expression Extractor</strong>. Для учебного примера важно задействовать как можно больше стандартных блоков <strong>Apache.JMeter</strong>, поэтому тут предполагается извлечение ссылки в три этапа:</p>
+<ol>
+<li><strong>JSON Path Extractor</strong> для извлечения части json-документа.</li>
+<li><strong>Regular Expression Extractor</strong> для извлечения текста между двойными кавычками.</li>
+<li><strong>javaScript</strong> для обратного экранирования слешей в тексте.</li>
+</ol>
+<h1>Переход по извлечённой ссылке</h1>
+<p>Чтобы открыть старницу по ссылке, снова используется компонент <strong>HTTP Request</strong>:</p>
+<ul>
+<li><strong><a href="http://jmeter.apache.org/usermanual/component_reference.html#HTTP_Request" target="_blank">HTTP Request</a></strong>.</li>
+</ul>
+<p><span style="color:#999999;">Использовано изображение с сайта filmpro.ru</span>.</p><br />  <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gocomments/loadtestweb.wordpress.com/188/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/comments/loadtestweb.wordpress.com/188/" /></a> <img alt="" border="0" src="https://pixel.wp.com/b.gif?host=loadtestweb.wordpress.com&#038;blog=124701137&#038;post=188&#038;subd=loadtestweb&#038;ref=&#038;feed=1" width="1" height="1" />]]></content:encoded>
+			<wfw:commentRss>https://loadtestweb.wordpress.com/2017/03/02/%d0%b7%d0%b0%d0%b4%d0%b0%d0%bd%d0%b8%d0%b5-2-%d1%80%d0%b0%d0%b1%d0%be%d1%82%d0%b0-%d1%81-json-%d0%b2-apache-jmeter/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+	
+		<media:thumbnail url="https://loadtestweb.files.wordpress.com/2017/03/holms-vatson2.jpg" />
+		<media:content url="http://loadtestweb.files.wordpress.com/2017/03/holms-vatson2.jpg" medium="image">
+			<media:title type="html">Holms.Vatson</media:title>
+		</media:content>
+
+		<media:content url="http://0.gravatar.com/avatar/993da3fa683fc7e2af464c5b9886609f?s=96&#38;d=identicon&#38;r=G" medium="image">
+			<media:title type="html">loadtestweb</media:title>
+		</media:content>
+
+		<media:content url="http://loadtestweb.files.wordpress.com/2017/03/2017-03-02_00-17-45.png" medium="image">
+			<media:title type="html">2017-03-02_00-17-45</media:title>
+		</media:content>
+
+		<media:content url="http://loadtestweb.files.wordpress.com/2017/03/fiddler-json.png" medium="image">
+			<media:title type="html">Отображение JSON-ответа в Fiddler4</media:title>
+		</media:content>
+
+		<media:content url="http://loadtestweb.files.wordpress.com/2017/03/2017-03-11_14-08-00.png" medium="image">
+			<media:title type="html">www.jsonquerytool.com</media:title>
+		</media:content>
+	</item>
+		<item>
+		<title>Задание 1. Работа с XML в JMeter</title>
+		<link>https://loadtestweb.wordpress.com/2017/03/01/%d0%b7%d0%b0%d0%b4%d0%b0%d0%bd%d0%b8%d0%b5-1-%d1%80%d0%b0%d0%b1%d0%be%d1%82%d0%b0-%d1%81-xml-%d0%b2-jmeter/</link>
+		<comments>https://loadtestweb.wordpress.com/2017/03/01/%d0%b7%d0%b0%d0%b4%d0%b0%d0%bd%d0%b8%d0%b5-1-%d1%80%d0%b0%d0%b1%d0%be%d1%82%d0%b0-%d1%81-xml-%d0%b2-jmeter/#comments</comments>
+		<pubDate>Wed, 01 Mar 2017 11:43:50 +0000</pubDate>
+		<dc:creator><![CDATA[loadtestweb]]></dc:creator>
+				<category><![CDATA[Задание по школе тестирования]]></category>
+		<category><![CDATA[Задание]]></category>
+
+		<guid isPermaLink="false">http://loadtestweb.wordpress.com/?p=158</guid>
+		<description><![CDATA[Разобрать XML<img alt="" border="0" src="https://pixel.wp.com/b.gif?host=loadtestweb.wordpress.com&#038;blog=124701137&#038;post=158&#038;subd=loadtestweb&#038;ref=&#038;feed=1" width="1" height="1" />]]></description>
+				<content:encoded><![CDATA[<p>Внизу стартовой страницы сайта есть ссылки на RSS. Для демонстрации работы с XML нужно извлечь ссылки на статьи из RSS и открыть одну из них.</p>
+<figure data-shortcode="caption" id="attachment_485" style="width: 788px" class="wp-caption alignnone"><img data-attachment-id="485" data-permalink="https://loadtestweb.wordpress.com/2017/03/01/%d0%b7%d0%b0%d0%b4%d0%b0%d0%bd%d0%b8%d0%b5-1-%d1%80%d0%b0%d0%b1%d0%be%d1%82%d0%b0-%d1%81-xml-%d0%b2-jmeter/rss-3/" data-orig-file="https://loadtestweb.files.wordpress.com/2017/03/rss1.png?w=1140" data-orig-size="788,434" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="RSS" data-image-description="" data-medium-file="https://loadtestweb.files.wordpress.com/2017/03/rss1.png?w=1140?w=300" data-large-file="https://loadtestweb.files.wordpress.com/2017/03/rss1.png?w=1140?w=788" class="alignnone size-full wp-image-485" src="https://loadtestweb.files.wordpress.com/2017/03/rss1.png?w=1140" alt="Ссылки на RSS в нижней части стартовой страницы сайта" srcset="https://loadtestweb.files.wordpress.com/2017/03/rss1.png 788w, https://loadtestweb.files.wordpress.com/2017/03/rss1.png?w=150 150w, https://loadtestweb.files.wordpress.com/2017/03/rss1.png?w=300 300w, https://loadtestweb.files.wordpress.com/2017/03/rss1.png?w=768 768w" sizes="(max-width: 788px) 100vw, 788px"   /><figcaption class="wp-caption-text">Ссылки на RSS в нижней части стартовой страницы сайта</figcaption></figure>
+<p>Имеется в виду ссылка:</p>
+<ul>
+<li><a href="https://loadtestweb.wordpress.com/feed/" target="_blank">https://loadtestweb.wordpress.com/feed/</a>.</li>
+</ul>
+<p>Нужно выполнить HTTP GET-запрос, и применить к результатам Post Processor для разработа XML-содержимого. Можно использовать JSR-223 пост-процессор и реализовать разбор XML программно на Groovy, JavaScript или BeanShell. Можно сделать регулярными выражениями, это будет ненадёжный способ — могут попать лишние ссылки в выборку. А можно использовать готовый удобный пост-процессор выбирающий данные по XPath-селекторам.</p>
+<p>Возможные компоненты для разбора XML:</p>
+<ul>
+<li><a href="http://jmeter.apache.org/usermanual/component_reference.html#XPath_Extractor" target="_blank">XPath Extractor</a> (рекомендуется);</li>
+<li><a href="http://jmeter.apache.org/usermanual/component_reference.html#JSR223_PostProcessor">JSR223 PostProcessor</a>;</li>
+<li><a href="http://jmeter.apache.org/usermanual/component_reference.html#Regular_Expression_Extractor" target="_blank">Regular Expression Extractor</a>.</li>
+</ul>
+<p>Для тестирования XPath-запросов можно использовать online-инструменты по поисковому запросу &#171;xpath online tester&#187;:</p>
+<ul>
+<li><a href="http://www.webtoolkitonline.com/xml-xpath-tester.html" target="_blank">http://www.webtoolkitonline.com/xml-xpath-tester.html</a>.</li>
+</ul>
+<p>Что выбирать из XML-документа можно определить визуально: rss, внутри channel, внутри item, внутри link. Содержимое тега link — нужная нам ссылка, одна из многих.</p>
+<p><img data-attachment-id="174" data-permalink="https://loadtestweb.wordpress.com/2017/03/01/%d0%b7%d0%b0%d0%b4%d0%b0%d0%bd%d0%b8%d0%b5-1-%d1%80%d0%b0%d0%b1%d0%be%d1%82%d0%b0-%d1%81-xml-%d0%b2-jmeter/rss-2-2/" data-orig-file="https://loadtestweb.files.wordpress.com/2017/03/rss-2.png?w=1140" data-orig-size="763,577" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="rss-2" data-image-description="" data-medium-file="https://loadtestweb.files.wordpress.com/2017/03/rss-2.png?w=1140?w=300" data-large-file="https://loadtestweb.files.wordpress.com/2017/03/rss-2.png?w=1140?w=763" class="alignnone size-full wp-image-174" src="https://loadtestweb.files.wordpress.com/2017/03/rss-2.png?w=1140" alt="rss-2" srcset="https://loadtestweb.files.wordpress.com/2017/03/rss-2.png 763w, https://loadtestweb.files.wordpress.com/2017/03/rss-2.png?w=150 150w, https://loadtestweb.files.wordpress.com/2017/03/rss-2.png?w=300 300w" sizes="(max-width: 763px) 100vw, 763px"   /></p>
+<p>Полезная функция <strong>Apache.JMeter</strong> для выбора случайного значения из набора переменных:</p>
+<ul>
+<li><a href="http://jmeter.apache.org/usermanual/functions.html#__RandomFromMultipleVars" target="_blank">__RandomFromMultipleVars</a>.</li>
+</ul>
+<p>Вызов функции можно вставить прямо в поле &#171;Path&#187; компонента <strong>HTTP Request</strong>, так как наши ссылки начинаются с https:// это сработает. Смотри описание компонента:</p>
+<ul>
+<li><a href="http://jmeter.apache.org/usermanual/component_reference.html#HTTP_Request" target="_blank">HTTP Request</a>.</li>
+</ul>
+<p><img data-attachment-id="183" data-permalink="https://loadtestweb.wordpress.com/2017/03/01/%d0%b7%d0%b0%d0%b4%d0%b0%d0%bd%d0%b8%d0%b5-1-%d1%80%d0%b0%d0%b1%d0%be%d1%82%d0%b0-%d1%81-xml-%d0%b2-jmeter/http-request-path/" data-orig-file="https://loadtestweb.files.wordpress.com/2017/03/http-request-path.png?w=1140" data-orig-size="623,390" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="http-request-path" data-image-description="" data-medium-file="https://loadtestweb.files.wordpress.com/2017/03/http-request-path.png?w=1140?w=300" data-large-file="https://loadtestweb.files.wordpress.com/2017/03/http-request-path.png?w=1140?w=623" class="alignnone size-full wp-image-183" src="https://loadtestweb.files.wordpress.com/2017/03/http-request-path.png?w=1140" alt="http-request-path" srcset="https://loadtestweb.files.wordpress.com/2017/03/http-request-path.png 623w, https://loadtestweb.files.wordpress.com/2017/03/http-request-path.png?w=150 150w, https://loadtestweb.files.wordpress.com/2017/03/http-request-path.png?w=300 300w" sizes="(max-width: 623px) 100vw, 623px"   /></p>
+<p>Для отладки того, что <strong>XPath Extractor</strong> извлекает нужные ссылки, удобно использовать <strong>Debug PostProcessor</strong>, который надо добавить рядом с <strong>XPath Extractor</strong>. И просматрировать значения переменных во <strong>View Result Tree</strong>. То есть для отладки удобно использовать метод &#171;отладочная печать&#187; и связку стандартных компонент:</p>
+<ul>
+<li><a href="http://jmeter.apache.org/usermanual/component_reference.html#Debug_PostProcessor" target="_blank">Debug PostProcessor</a>;</li>
+<li><a href="http://jmeter.apache.org/usermanual/component_reference.html#View_Results_Tree" target="_blank">View Results Tree</a>.</li>
+</ul>
+<p>А также можно использовать сторонний компонент <strong>BlazeMeter Step-by-step Debugger</strong>, который устанавливается в <strong>Apache.JMeter</strong> через <a href="https://jmeter-plugins.org/wiki/PluginsManager/" target="_blank">Plugins Manager</a>:</p>
+<ol>
+<li>Скачать файл менеджера плагинов (jmeter-plugins-manager-0.11.jar) <a href="https://jmeter-plugins.org/get/" target="_blank">https://jmeter-plugins.org/get/</a> в каталог /lib/ext/ в папке установки <strong>Apache.JMeter</strong>.</li>
+<li>Перезапустить <strong>Apache.JMeter</strong>.</li>
+<li>Запустить менеджер плагинов <em>&lt;Главное меню / Options / Plugin Manager&gt;</em>.</li>
+<li>Установить <a href="https://github.com/Blazemeter/jmeter-debugger" target="_blank">BlazeMeter Step-by-step Debugger</a> отметив компонент и нажав кнопку <em><span style="text-decoration:underline;"><strong>Apply Changes And Restart Jmeter</strong></span></em>.</li>
+<li>Теперь можно отлаживать скрипт в отладчике и просматрировать значения переменных, формирумых в результате работы Post Processor-ов, таких как <strong>XPath Extractor</strong>, в отладчике.</li>
+</ol>
+<p><span style="color:#999999;">Источник картинки с Ю. Гагариным: www.novoboi.ru</span></p><br />  <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gocomments/loadtestweb.wordpress.com/158/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/comments/loadtestweb.wordpress.com/158/" /></a> <img alt="" border="0" src="https://pixel.wp.com/b.gif?host=loadtestweb.wordpress.com&#038;blog=124701137&#038;post=158&#038;subd=loadtestweb&#038;ref=&#038;feed=1" width="1" height="1" />]]></content:encoded>
+			<wfw:commentRss>https://loadtestweb.wordpress.com/2017/03/01/%d0%b7%d0%b0%d0%b4%d0%b0%d0%bd%d0%b8%d0%b5-1-%d1%80%d0%b0%d0%b1%d0%be%d1%82%d0%b0-%d1%81-xml-%d0%b2-jmeter/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+	
+		<media:thumbnail url="https://loadtestweb.files.wordpress.com/2017/03/1.png" />
+		<media:content url="http://loadtestweb.files.wordpress.com/2017/03/1.png" medium="image">
+			<media:title type="html">1</media:title>
+		</media:content>
+
+		<media:content url="http://0.gravatar.com/avatar/993da3fa683fc7e2af464c5b9886609f?s=96&#38;d=identicon&#38;r=G" medium="image">
+			<media:title type="html">loadtestweb</media:title>
+		</media:content>
+
+		<media:content url="http://loadtestweb.files.wordpress.com/2017/03/rss1.png" medium="image">
+			<media:title type="html">Ссылки на RSS в нижней части стартовой страницы сайта</media:title>
+		</media:content>
+
+		<media:content url="http://loadtestweb.files.wordpress.com/2017/03/rss-2.png" medium="image">
+			<media:title type="html">rss-2</media:title>
+		</media:content>
+
+		<media:content url="http://loadtestweb.files.wordpress.com/2017/03/http-request-path.png" medium="image">
+			<media:title type="html">http-request-path</media:title>
+		</media:content>
+	</item>
+		<item>
+		<title>Пример статьи # 15</title>
+		<link>https://loadtestweb.wordpress.com/2017/02/25/test-15/</link>
+		<comments>https://loadtestweb.wordpress.com/2017/02/25/test-15/#comments</comments>
+		<pubDate>Sat, 25 Feb 2017 18:37:08 +0000</pubDate>
+		<dc:creator><![CDATA[loadtestweb]]></dc:creator>
+				<category><![CDATA[Тестовая страница]]></category>
+		<category><![CDATA[тестовые данные]]></category>
+		<category><![CDATA[test]]></category>
+
+		<guid isPermaLink="false">http://loadtestweb.wordpress.com/?p=130</guid>
+		<description><![CDATA[Цель — оставить комментарий к статье.<img alt="" border="0" src="https://pixel.wp.com/b.gif?host=loadtestweb.wordpress.com&#038;blog=124701137&#038;post=130&#038;subd=loadtestweb&#038;ref=&#038;feed=1" width="1" height="1" />]]></description>
+				<content:encoded><![CDATA[<h2>Цель</h2>
+<p>Оставить комментарий к статье от гостевого пользователя.</p>
+<p>Дополнительное задание — оставить комментарий от выполнившего аутентификацию пользователя.</p>
+<p>Полный сценарий работы:</p>
+<ul>
+<li><a href="https://loadtestweb.wordpress.com/2017/02/25/%d0%b8%d0%b7%d0%b1%d1%80%d0%b0%d0%bd%d0%bd%d0%be%d0%b5-%d1%81%d0%be%d0%b4%d0%b5%d1%80%d0%b6%d0%b8%d0%bc%d0%be%d0%b5/" target="_blank">Избранное содержимое</a></li>
+</ul>
+<h2>Способы получения значений полей</h2>
+<p>Чтобы успешно опубликовать комментарий, нужно извлечь с формы csrf-токены, токены аутентификации, идентификатор статьи и многие другие поля.<br />
+Для извлечения токенов и других полей рекомендуется использовать следующие способы:</p>
+<ul>
+<li>jquery/css — селектор</li>
+<li>регулярные выражения</li>
+<li>xpath-селектор</li>
+</ul>
+<h2>Инструкции и подсказки</h2>
+<ul>
+<li><a href="https://loadtestweb.wordpress.com/2017/03/02/%d0%b7%d0%b0%d0%b4%d0%b0%d0%bd%d0%b8%d0%b5-4-%d0%be%d1%81%d1%82%d0%b0%d0%b2%d0%b8%d1%82%d1%8c-%d0%ba%d0%be%d0%bc%d0%bc%d0%b5%d0%bd%d1%82%d0%b0%d1%80%d0%b8%d0%b9-%d0%ba-%d1%81%d1%82%d0%b0%d1%82%d1%8c/" target="_blank">Задание 4. Оставить комментарий к статье</a></li>
+<li><a href="https://loadtestweb.wordpress.com/2017/03/02/fiddler-4-%d0%bd%d0%b0%d1%81%d1%82%d1%80%d0%be%d0%b9%d0%ba%d0%b0-%d0%b8-%d0%b8%d1%81%d0%bf%d0%be%d0%bb%d1%8c%d0%b7%d0%be%d0%b2%d0%b0%d0%bd%d0%b8%d0%b5-%d1%81-https/">Fiddler 4. Настройка HTTPS</a></li>
+</ul><br />  <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gocomments/loadtestweb.wordpress.com/130/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/comments/loadtestweb.wordpress.com/130/" /></a> <img alt="" border="0" src="https://pixel.wp.com/b.gif?host=loadtestweb.wordpress.com&#038;blog=124701137&#038;post=130&#038;subd=loadtestweb&#038;ref=&#038;feed=1" width="1" height="1" />]]></content:encoded>
+			<wfw:commentRss>https://loadtestweb.wordpress.com/2017/02/25/test-15/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+	
+		<media:thumbnail url="https://loadtestweb.files.wordpress.com/2017/02/robot-14-look-com-ua.jpg" />
+		<media:content url="http://loadtestweb.files.wordpress.com/2017/02/robot-14-look-com-ua.jpg" medium="image">
+			<media:title type="html">robot-14-look-com-ua</media:title>
+		</media:content>
+
+		<media:content url="http://0.gravatar.com/avatar/993da3fa683fc7e2af464c5b9886609f?s=96&#38;d=identicon&#38;r=G" medium="image">
+			<media:title type="html">loadtestweb</media:title>
+		</media:content>
+	</item>
+		<item>
+		<title>Пример статьи # 14</title>
+		<link>https://loadtestweb.wordpress.com/2017/02/25/test-14/</link>
+		<comments>https://loadtestweb.wordpress.com/2017/02/25/test-14/#respond</comments>
+		<pubDate>Sat, 25 Feb 2017 18:35:53 +0000</pubDate>
+		<dc:creator><![CDATA[loadtestweb]]></dc:creator>
+				<category><![CDATA[Тестовая страница]]></category>
+		<category><![CDATA[тестовые данные]]></category>
+
+		<guid isPermaLink="false">http://loadtestweb.wordpress.com/?p=127</guid>
+		<description><![CDATA[Цель — оставить комментарий к статье.<img alt="" border="0" src="https://pixel.wp.com/b.gif?host=loadtestweb.wordpress.com&#038;blog=124701137&#038;post=127&#038;subd=loadtestweb&#038;ref=&#038;feed=1" width="1" height="1" />]]></description>
+				<content:encoded><![CDATA[<h2>Цель</h2>
+<p>Оставить комментарий к статье от гостевого пользователя.</p>
+<p>Дополнительное задание — оставить комментарий от выполнившего аутентификацию пользователя.</p>
+<p>Полный сценарий работы:</p>
+<ul>
+<li><a href="https://loadtestweb.wordpress.com/2017/02/25/%d0%b8%d0%b7%d0%b1%d1%80%d0%b0%d0%bd%d0%bd%d0%be%d0%b5-%d1%81%d0%be%d0%b4%d0%b5%d1%80%d0%b6%d0%b8%d0%bc%d0%be%d0%b5/" target="_blank">Избранное содержимое</a></li>
+</ul>
+<h2>Способы получения значений полей</h2>
+<p>Чтобы успешно опубликовать комментарий, нужно извлечь с формы csrf-токены, токены аутентификации, идентификатор статьи и многие другие поля.<br />
+Для извлечения токенов и других полей рекомендуется использовать следующие способы:</p>
+<ul>
+<li>jquery/css — селектор</li>
+<li>регулярные выражения</li>
+<li>xpath-селектор</li>
+</ul>
+<h2>Инструкции и подсказки</h2>
+<ul>
+<li><a href="https://loadtestweb.wordpress.com/2017/03/02/%d0%b7%d0%b0%d0%b4%d0%b0%d0%bd%d0%b8%d0%b5-4-%d0%be%d1%81%d1%82%d0%b0%d0%b2%d0%b8%d1%82%d1%8c-%d0%ba%d0%be%d0%bc%d0%bc%d0%b5%d0%bd%d1%82%d0%b0%d1%80%d0%b8%d0%b9-%d0%ba-%d1%81%d1%82%d0%b0%d1%82%d1%8c/" target="_blank">Задание 4. Оставить комментарий к статье</a></li>
+<li><a href="https://loadtestweb.wordpress.com/2017/03/02/fiddler-4-%d0%bd%d0%b0%d1%81%d1%82%d1%80%d0%be%d0%b9%d0%ba%d0%b0-%d0%b8-%d0%b8%d1%81%d0%bf%d0%be%d0%bb%d1%8c%d0%b7%d0%be%d0%b2%d0%b0%d0%bd%d0%b8%d0%b5-%d1%81-https/">Fiddler 4. Настройка HTTPS</a></li>
+</ul><br />  <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gocomments/loadtestweb.wordpress.com/127/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/comments/loadtestweb.wordpress.com/127/" /></a> <img alt="" border="0" src="https://pixel.wp.com/b.gif?host=loadtestweb.wordpress.com&#038;blog=124701137&#038;post=127&#038;subd=loadtestweb&#038;ref=&#038;feed=1" width="1" height="1" />]]></content:encoded>
+			<wfw:commentRss>https://loadtestweb.wordpress.com/2017/02/25/test-14/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	
+		<media:thumbnail url="https://loadtestweb.files.wordpress.com/2017/02/robot-13-look-com-ua.jpg" />
+		<media:content url="http://loadtestweb.files.wordpress.com/2017/02/robot-13-look-com-ua.jpg" medium="image">
+			<media:title type="html">robot-13-look-com-ua</media:title>
+		</media:content>
+
+		<media:content url="http://0.gravatar.com/avatar/993da3fa683fc7e2af464c5b9886609f?s=96&#38;d=identicon&#38;r=G" medium="image">
+			<media:title type="html">loadtestweb</media:title>
+		</media:content>
+	</item>
+		<item>
+		<title>Пример статьи # 13</title>
+		<link>https://loadtestweb.wordpress.com/2017/02/25/test-13/</link>
+		<comments>https://loadtestweb.wordpress.com/2017/02/25/test-13/#comments</comments>
+		<pubDate>Sat, 25 Feb 2017 18:34:55 +0000</pubDate>
+		<dc:creator><![CDATA[loadtestweb]]></dc:creator>
+				<category><![CDATA[Тестовая страница]]></category>
+		<category><![CDATA[тестовые данные]]></category>
+
+		<guid isPermaLink="false">http://loadtestweb.wordpress.com/?p=122</guid>
+		<description><![CDATA[Цель — оставить комментарий к статье.<img alt="" border="0" src="https://pixel.wp.com/b.gif?host=loadtestweb.wordpress.com&#038;blog=124701137&#038;post=122&#038;subd=loadtestweb&#038;ref=&#038;feed=1" width="1" height="1" />]]></description>
+				<content:encoded><![CDATA[<h2>Цель</h2>
+<p>Оставить комментарий к статье от гостевого пользователя.</p>
+<p>Дополнительное задание — оставить комментарий от выполнившего аутентификацию пользователя.</p>
+<p>Полный сценарий работы:</p>
+<ul>
+<li><a href="https://loadtestweb.wordpress.com/2017/02/25/%d0%b8%d0%b7%d0%b1%d1%80%d0%b0%d0%bd%d0%bd%d0%be%d0%b5-%d1%81%d0%be%d0%b4%d0%b5%d1%80%d0%b6%d0%b8%d0%bc%d0%be%d0%b5/" target="_blank">Избранное содержимое</a></li>
+</ul>
+<h2>Способы получения значений полей</h2>
+<p>Чтобы успешно опубликовать комментарий, нужно извлечь с формы csrf-токены, токены аутентификации, идентификатор статьи и многие другие поля.<br />
+Для извлечения токенов и других полей рекомендуется использовать следующие способы:</p>
+<ul>
+<li>jquery/css — селектор</li>
+<li>регулярные выражения</li>
+<li>xpath-селектор</li>
+</ul>
+<h2>Инструкции и подсказки</h2>
+<ul>
+<li><a href="https://loadtestweb.wordpress.com/2017/03/02/%d0%b7%d0%b0%d0%b4%d0%b0%d0%bd%d0%b8%d0%b5-4-%d0%be%d1%81%d1%82%d0%b0%d0%b2%d0%b8%d1%82%d1%8c-%d0%ba%d0%be%d0%bc%d0%bc%d0%b5%d0%bd%d1%82%d0%b0%d1%80%d0%b8%d0%b9-%d0%ba-%d1%81%d1%82%d0%b0%d1%82%d1%8c/" target="_blank">Задание 4. Оставить комментарий к статье</a></li>
+<li><a href="https://loadtestweb.wordpress.com/2017/03/02/fiddler-4-%d0%bd%d0%b0%d1%81%d1%82%d1%80%d0%be%d0%b9%d0%ba%d0%b0-%d0%b8-%d0%b8%d1%81%d0%bf%d0%be%d0%bb%d1%8c%d0%b7%d0%be%d0%b2%d0%b0%d0%bd%d0%b8%d0%b5-%d1%81-https/">Fiddler 4. Настройка HTTPS</a></li>
+</ul><br />  <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gocomments/loadtestweb.wordpress.com/122/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/comments/loadtestweb.wordpress.com/122/" /></a> <img alt="" border="0" src="https://pixel.wp.com/b.gif?host=loadtestweb.wordpress.com&#038;blog=124701137&#038;post=122&#038;subd=loadtestweb&#038;ref=&#038;feed=1" width="1" height="1" />]]></content:encoded>
+			<wfw:commentRss>https://loadtestweb.wordpress.com/2017/02/25/test-13/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+	
+		<media:thumbnail url="https://loadtestweb.files.wordpress.com/2017/02/robot-12-look-com-ua.jpg" />
+		<media:content url="http://loadtestweb.files.wordpress.com/2017/02/robot-12-look-com-ua.jpg" medium="image">
+			<media:title type="html">robot-12-look-com-ua</media:title>
+		</media:content>
+
+		<media:content url="http://0.gravatar.com/avatar/993da3fa683fc7e2af464c5b9886609f?s=96&#38;d=identicon&#38;r=G" medium="image">
+			<media:title type="html">loadtestweb</media:title>
+		</media:content>
+	</item>
+		<item>
+		<title>Пример статьи # 12</title>
+		<link>https://loadtestweb.wordpress.com/2017/02/25/test-12/</link>
+		<comments>https://loadtestweb.wordpress.com/2017/02/25/test-12/#comments</comments>
+		<pubDate>Sat, 25 Feb 2017 18:02:25 +0000</pubDate>
+		<dc:creator><![CDATA[loadtestweb]]></dc:creator>
+				<category><![CDATA[Тестовая страница]]></category>
+		<category><![CDATA[тестовые данные]]></category>
+		<category><![CDATA[test]]></category>
+
+		<guid isPermaLink="false">http://loadtestweb.wordpress.com/?p=116</guid>
+		<description><![CDATA[Цель — оставить комментарий к статье.<img alt="" border="0" src="https://pixel.wp.com/b.gif?host=loadtestweb.wordpress.com&#038;blog=124701137&#038;post=116&#038;subd=loadtestweb&#038;ref=&#038;feed=1" width="1" height="1" />]]></description>
+				<content:encoded><![CDATA[<h2>Цель</h2>
+<p>Оставить комментарий к статье от гостевого пользователя.</p>
+<p>Дополнительное задание — оставить комментарий от выполнившего аутентификацию пользователя.</p>
+<p>Полный сценарий работы:</p>
+<ul>
+<li><a href="https://loadtestweb.wordpress.com/2017/02/25/%d0%b8%d0%b7%d0%b1%d1%80%d0%b0%d0%bd%d0%bd%d0%be%d0%b5-%d1%81%d0%be%d0%b4%d0%b5%d1%80%d0%b6%d0%b8%d0%bc%d0%be%d0%b5/" target="_blank">Избранное содержимое</a></li>
+</ul>
+<h2>Способы получения значений полей</h2>
+<p>Чтобы успешно опубликовать комментарий, нужно извлечь с формы csrf-токены, токены аутентификации, идентификатор статьи и многие другие поля.<br />
+Для извлечения токенов и других полей рекомендуется использовать следующие способы:</p>
+<ul>
+<li>jquery/css — селектор</li>
+<li>регулярные выражения</li>
+<li>xpath-селектор</li>
+</ul>
+<h2>Инструкции и подсказки</h2>
+<ul>
+<li><a href="https://loadtestweb.wordpress.com/2017/03/02/%d0%b7%d0%b0%d0%b4%d0%b0%d0%bd%d0%b8%d0%b5-4-%d0%be%d1%81%d1%82%d0%b0%d0%b2%d0%b8%d1%82%d1%8c-%d0%ba%d0%be%d0%bc%d0%bc%d0%b5%d0%bd%d1%82%d0%b0%d1%80%d0%b8%d0%b9-%d0%ba-%d1%81%d1%82%d0%b0%d1%82%d1%8c/" target="_blank">Задание 4. Оставить комментарий к статье</a></li>
+<li><a href="https://loadtestweb.wordpress.com/2017/03/02/fiddler-4-%d0%bd%d0%b0%d1%81%d1%82%d1%80%d0%be%d0%b9%d0%ba%d0%b0-%d0%b8-%d0%b8%d1%81%d0%bf%d0%be%d0%bb%d1%8c%d0%b7%d0%be%d0%b2%d0%b0%d0%bd%d0%b8%d0%b5-%d1%81-https/">Fiddler 4. Настройка HTTPS</a></li>
+</ul><br />  <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gocomments/loadtestweb.wordpress.com/116/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/comments/loadtestweb.wordpress.com/116/" /></a> <img alt="" border="0" src="https://pixel.wp.com/b.gif?host=loadtestweb.wordpress.com&#038;blog=124701137&#038;post=116&#038;subd=loadtestweb&#038;ref=&#038;feed=1" width="1" height="1" />]]></content:encoded>
+			<wfw:commentRss>https://loadtestweb.wordpress.com/2017/02/25/test-12/feed/</wfw:commentRss>
+		<slash:comments>645</slash:comments>
+	
+		<media:thumbnail url="https://loadtestweb.files.wordpress.com/2017/02/robot-11-look-com-ua.jpg" />
+		<media:content url="http://loadtestweb.files.wordpress.com/2017/02/robot-11-look-com-ua.jpg" medium="image">
+			<media:title type="html">robot-11-look-com-ua</media:title>
+		</media:content>
+
+		<media:content url="http://0.gravatar.com/avatar/993da3fa683fc7e2af464c5b9886609f?s=96&#38;d=identicon&#38;r=G" medium="image">
+			<media:title type="html">loadtestweb</media:title>
+		</media:content>
+	</item>
+		<item>
+		<title>Пример статьи # 11</title>
+		<link>https://loadtestweb.wordpress.com/2017/02/25/test-11/</link>
+		<comments>https://loadtestweb.wordpress.com/2017/02/25/test-11/#comments</comments>
+		<pubDate>Sat, 25 Feb 2017 18:01:12 +0000</pubDate>
+		<dc:creator><![CDATA[loadtestweb]]></dc:creator>
+				<category><![CDATA[Тестовая страница]]></category>
+		<category><![CDATA[тестовые данные]]></category>
+		<category><![CDATA[test]]></category>
+
+		<guid isPermaLink="false">http://loadtestweb.wordpress.com/?p=112</guid>
+		<description><![CDATA[Цель — оставить комментарий к статье.<img alt="" border="0" src="https://pixel.wp.com/b.gif?host=loadtestweb.wordpress.com&#038;blog=124701137&#038;post=112&#038;subd=loadtestweb&#038;ref=&#038;feed=1" width="1" height="1" />]]></description>
+				<content:encoded><![CDATA[<h2>Цель</h2>
+<p>Оставить комментарий к статье от гостевого пользователя.</p>
+<p>Дополнительное задание — оставить комментарий от выполнившего аутентификацию пользователя.</p>
+<p>Полный сценарий работы:</p>
+<ul>
+<li><a href="https://loadtestweb.wordpress.com/2017/02/25/%d0%b8%d0%b7%d0%b1%d1%80%d0%b0%d0%bd%d0%bd%d0%be%d0%b5-%d1%81%d0%be%d0%b4%d0%b5%d1%80%d0%b6%d0%b8%d0%bc%d0%be%d0%b5/" target="_blank">Избранное содержимое</a></li>
+</ul>
+<h2>Способы получения значений полей</h2>
+<p>Чтобы успешно опубликовать комментарий, нужно извлечь с формы csrf-токены, токены аутентификации, идентификатор статьи и многие другие поля.<br />
+Для извлечения токенов и других полей рекомендуется использовать следующие способы:</p>
+<ul>
+<li>jquery/css — селектор</li>
+<li>регулярные выражения</li>
+<li>xpath-селектор</li>
+</ul>
+<h2>Инструкции и подсказки</h2>
+<ul>
+<li><a href="https://loadtestweb.wordpress.com/2017/03/02/%d0%b7%d0%b0%d0%b4%d0%b0%d0%bd%d0%b8%d0%b5-4-%d0%be%d1%81%d1%82%d0%b0%d0%b2%d0%b8%d1%82%d1%8c-%d0%ba%d0%be%d0%bc%d0%bc%d0%b5%d0%bd%d1%82%d0%b0%d1%80%d0%b8%d0%b9-%d0%ba-%d1%81%d1%82%d0%b0%d1%82%d1%8c/" target="_blank">Задание 4. Оставить комментарий к статье</a></li>
+<li><a href="https://loadtestweb.wordpress.com/2017/03/02/fiddler-4-%d0%bd%d0%b0%d1%81%d1%82%d1%80%d0%be%d0%b9%d0%ba%d0%b0-%d0%b8-%d0%b8%d1%81%d0%bf%d0%be%d0%bb%d1%8c%d0%b7%d0%be%d0%b2%d0%b0%d0%bd%d0%b8%d0%b5-%d1%81-https/">Fiddler 4. Настройка HTTPS</a></li>
+</ul><br />  <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gocomments/loadtestweb.wordpress.com/112/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/comments/loadtestweb.wordpress.com/112/" /></a> <img alt="" border="0" src="https://pixel.wp.com/b.gif?host=loadtestweb.wordpress.com&#038;blog=124701137&#038;post=112&#038;subd=loadtestweb&#038;ref=&#038;feed=1" width="1" height="1" />]]></content:encoded>
+			<wfw:commentRss>https://loadtestweb.wordpress.com/2017/02/25/test-11/feed/</wfw:commentRss>
+		<slash:comments>56</slash:comments>
+	
+		<media:thumbnail url="https://loadtestweb.files.wordpress.com/2017/02/robot-10-look-com-ua.jpg" />
+		<media:content url="http://loadtestweb.files.wordpress.com/2017/02/robot-10-look-com-ua.jpg" medium="image">
+			<media:title type="html">robot-10-look-com-ua</media:title>
+		</media:content>
+
+		<media:content url="http://0.gravatar.com/avatar/993da3fa683fc7e2af464c5b9886609f?s=96&#38;d=identicon&#38;r=G" medium="image">
+			<media:title type="html">loadtestweb</media:title>
+		</media:content>
+	</item>
+		<item>
+		<title>Пример статьи # 10</title>
+		<link>https://loadtestweb.wordpress.com/2017/02/25/test-10/</link>
+		<comments>https://loadtestweb.wordpress.com/2017/02/25/test-10/#comments</comments>
+		<pubDate>Sat, 25 Feb 2017 17:56:55 +0000</pubDate>
+		<dc:creator><![CDATA[loadtestweb]]></dc:creator>
+				<category><![CDATA[Тестовая страница]]></category>
+		<category><![CDATA[тестовые данные]]></category>
+		<category><![CDATA[test]]></category>
+
+		<guid isPermaLink="false">http://loadtestweb.wordpress.com/?p=106</guid>
+		<description><![CDATA[Цель — оставить комментарий к статье.<img alt="" border="0" src="https://pixel.wp.com/b.gif?host=loadtestweb.wordpress.com&#038;blog=124701137&#038;post=106&#038;subd=loadtestweb&#038;ref=&#038;feed=1" width="1" height="1" />]]></description>
+				<content:encoded><![CDATA[<h2>Цель</h2>
+<p>Оставить комментарий к статье от гостевого пользователя.</p>
+<p>Дополнительное задание — оставить комментарий от выполнившего аутентификацию пользователя.</p>
+<p>Полный сценарий работы:</p>
+<ul>
+<li><a href="https://loadtestweb.wordpress.com/2017/02/25/%d0%b8%d0%b7%d0%b1%d1%80%d0%b0%d0%bd%d0%bd%d0%be%d0%b5-%d1%81%d0%be%d0%b4%d0%b5%d1%80%d0%b6%d0%b8%d0%bc%d0%be%d0%b5/" target="_blank">Избранное содержимое</a></li>
+</ul>
+<h2>Способы получения значений полей</h2>
+<p>Чтобы успешно опубликовать комментарий, нужно извлечь с формы csrf-токены, токены аутентификации, идентификатор статьи и многие другие поля.<br />
+Для извлечения токенов и других полей рекомендуется использовать следующие способы:</p>
+<ul>
+<li>jquery/css — селектор</li>
+<li>регулярные выражения</li>
+<li>xpath-селектор</li>
+</ul>
+<h2>Инструкции и подсказки</h2>
+<ul>
+<li><a href="https://loadtestweb.wordpress.com/2017/03/02/%d0%b7%d0%b0%d0%b4%d0%b0%d0%bd%d0%b8%d0%b5-4-%d0%be%d1%81%d1%82%d0%b0%d0%b2%d0%b8%d1%82%d1%8c-%d0%ba%d0%be%d0%bc%d0%bc%d0%b5%d0%bd%d1%82%d0%b0%d1%80%d0%b8%d0%b9-%d0%ba-%d1%81%d1%82%d0%b0%d1%82%d1%8c/" target="_blank">Задание 4. Оставить комментарий к статье</a></li>
+<li><a href="https://loadtestweb.wordpress.com/2017/03/02/fiddler-4-%d0%bd%d0%b0%d1%81%d1%82%d1%80%d0%be%d0%b9%d0%ba%d0%b0-%d0%b8-%d0%b8%d1%81%d0%bf%d0%be%d0%bb%d1%8c%d0%b7%d0%be%d0%b2%d0%b0%d0%bd%d0%b8%d0%b5-%d1%81-https/">Fiddler 4. Настройка HTTPS</a></li>
+</ul><br />  <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gocomments/loadtestweb.wordpress.com/106/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/comments/loadtestweb.wordpress.com/106/" /></a> <img alt="" border="0" src="https://pixel.wp.com/b.gif?host=loadtestweb.wordpress.com&#038;blog=124701137&#038;post=106&#038;subd=loadtestweb&#038;ref=&#038;feed=1" width="1" height="1" />]]></content:encoded>
+			<wfw:commentRss>https://loadtestweb.wordpress.com/2017/02/25/test-10/feed/</wfw:commentRss>
+		<slash:comments>72</slash:comments>
+	
+		<media:thumbnail url="https://loadtestweb.files.wordpress.com/2017/02/robot-9-look-com-ua.jpg" />
+		<media:content url="http://loadtestweb.files.wordpress.com/2017/02/robot-9-look-com-ua.jpg" medium="image">
+			<media:title type="html">robot-9-look-com-ua</media:title>
+		</media:content>
+
+		<media:content url="http://0.gravatar.com/avatar/993da3fa683fc7e2af464c5b9886609f?s=96&#38;d=identicon&#38;r=G" medium="image">
+			<media:title type="html">loadtestweb</media:title>
+		</media:content>
+	</item>
+		<item>
+		<title>Пример статьи # 9</title>
+		<link>https://loadtestweb.wordpress.com/2017/02/25/test-9/</link>
+		<comments>https://loadtestweb.wordpress.com/2017/02/25/test-9/#comments</comments>
+		<pubDate>Sat, 25 Feb 2017 17:54:54 +0000</pubDate>
+		<dc:creator><![CDATA[loadtestweb]]></dc:creator>
+				<category><![CDATA[Тестовая страница]]></category>
+		<category><![CDATA[тестовые данные]]></category>
+		<category><![CDATA[test]]></category>
+
+		<guid isPermaLink="false">http://loadtestweb.wordpress.com/?p=101</guid>
+		<description><![CDATA[Цель — оставить комментарий к статье.<img alt="" border="0" src="https://pixel.wp.com/b.gif?host=loadtestweb.wordpress.com&#038;blog=124701137&#038;post=101&#038;subd=loadtestweb&#038;ref=&#038;feed=1" width="1" height="1" />]]></description>
+				<content:encoded><![CDATA[<h2>Цель</h2>
+<p>Оставить комментарий к статье от гостевого пользователя.</p>
+<p>Дополнительное задание — оставить комментарий от выполнившего аутентификацию пользователя.</p>
+<p>Полный сценарий работы:</p>
+<ul>
+<li><a href="https://loadtestweb.wordpress.com/2017/02/25/%d0%b8%d0%b7%d0%b1%d1%80%d0%b0%d0%bd%d0%bd%d0%be%d0%b5-%d1%81%d0%be%d0%b4%d0%b5%d1%80%d0%b6%d0%b8%d0%bc%d0%be%d0%b5/" target="_blank">Избранное содержимое</a></li>
+</ul>
+<h2>Способы получения значений полей</h2>
+<p>Чтобы успешно опубликовать комментарий, нужно извлечь с формы csrf-токены, токены аутентификации, идентификатор статьи и многие другие поля.<br />
+Для извлечения токенов и других полей рекомендуется использовать следующие способы:</p>
+<ul>
+<li>jquery/css — селектор</li>
+<li>регулярные выражения</li>
+<li>xpath-селектор</li>
+</ul>
+<h2>Инструкции и подсказки</h2>
+<ul>
+<li><a href="https://loadtestweb.wordpress.com/2017/03/02/%d0%b7%d0%b0%d0%b4%d0%b0%d0%bd%d0%b8%d0%b5-4-%d0%be%d1%81%d1%82%d0%b0%d0%b2%d0%b8%d1%82%d1%8c-%d0%ba%d0%be%d0%bc%d0%bc%d0%b5%d0%bd%d1%82%d0%b0%d1%80%d0%b8%d0%b9-%d0%ba-%d1%81%d1%82%d0%b0%d1%82%d1%8c/" target="_blank">Задание 4. Оставить комментарий к статье</a></li>
+<li><a href="https://loadtestweb.wordpress.com/2017/03/02/fiddler-4-%d0%bd%d0%b0%d1%81%d1%82%d1%80%d0%be%d0%b9%d0%ba%d0%b0-%d0%b8-%d0%b8%d1%81%d0%bf%d0%be%d0%bb%d1%8c%d0%b7%d0%be%d0%b2%d0%b0%d0%bd%d0%b8%d0%b5-%d1%81-https/">Fiddler 4. Настройка HTTPS</a></li>
+</ul><br />  <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gocomments/loadtestweb.wordpress.com/101/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/comments/loadtestweb.wordpress.com/101/" /></a> <img alt="" border="0" src="https://pixel.wp.com/b.gif?host=loadtestweb.wordpress.com&#038;blog=124701137&#038;post=101&#038;subd=loadtestweb&#038;ref=&#038;feed=1" width="1" height="1" />]]></content:encoded>
+			<wfw:commentRss>https://loadtestweb.wordpress.com/2017/02/25/test-9/feed/</wfw:commentRss>
+		<slash:comments>8</slash:comments>
+	
+		<media:thumbnail url="https://loadtestweb.files.wordpress.com/2017/02/robot-8-look-com-ua.jpg" />
+		<media:content url="http://loadtestweb.files.wordpress.com/2017/02/robot-8-look-com-ua.jpg" medium="image">
+			<media:title type="html">robot-8-look-com-ua</media:title>
+		</media:content>
+
+		<media:content url="http://0.gravatar.com/avatar/993da3fa683fc7e2af464c5b9886609f?s=96&#38;d=identicon&#38;r=G" medium="image">
+			<media:title type="html">loadtestweb</media:title>
+		</media:content>
+	</item>
+		<item>
+		<title>Пример статьи # 8</title>
+		<link>https://loadtestweb.wordpress.com/2017/02/25/test-8/</link>
+		<comments>https://loadtestweb.wordpress.com/2017/02/25/test-8/#comments</comments>
+		<pubDate>Sat, 25 Feb 2017 17:54:01 +0000</pubDate>
+		<dc:creator><![CDATA[loadtestweb]]></dc:creator>
+				<category><![CDATA[Тестовая страница]]></category>
+		<category><![CDATA[тестовые данные]]></category>
+		<category><![CDATA[test]]></category>
+
+		<guid isPermaLink="false">http://loadtestweb.wordpress.com/?p=97</guid>
+		<description><![CDATA[Цель — оставить комментарий к статье.<img alt="" border="0" src="https://pixel.wp.com/b.gif?host=loadtestweb.wordpress.com&#038;blog=124701137&#038;post=97&#038;subd=loadtestweb&#038;ref=&#038;feed=1" width="1" height="1" />]]></description>
+				<content:encoded><![CDATA[<h2>Цель</h2>
+<p>Оставить комментарий к статье от гостевого пользователя.</p>
+<p>Дополнительное задание — оставить комментарий от выполнившего аутентификацию пользователя.</p>
+<p>Полный сценарий работы:</p>
+<ul>
+<li><a href="https://loadtestweb.wordpress.com/2017/02/25/%d0%b8%d0%b7%d0%b1%d1%80%d0%b0%d0%bd%d0%bd%d0%be%d0%b5-%d1%81%d0%be%d0%b4%d0%b5%d1%80%d0%b6%d0%b8%d0%bc%d0%be%d0%b5/" target="_blank">Избранное содержимое</a></li>
+</ul>
+<h2>Способы получения значений полей</h2>
+<p>Чтобы успешно опубликовать комментарий, нужно извлечь с формы csrf-токены, токены аутентификации, идентификатор статьи и многие другие поля.<br />
+Для извлечения токенов и других полей рекомендуется использовать следующие способы:</p>
+<ul>
+<li>jquery/css — селектор</li>
+<li>регулярные выражения</li>
+<li>xpath-селектор</li>
+</ul>
+<h2>Инструкции и подсказки</h2>
+<ul>
+<li><a href="https://loadtestweb.wordpress.com/2017/03/02/%d0%b7%d0%b0%d0%b4%d0%b0%d0%bd%d0%b8%d0%b5-4-%d0%be%d1%81%d1%82%d0%b0%d0%b2%d0%b8%d1%82%d1%8c-%d0%ba%d0%be%d0%bc%d0%bc%d0%b5%d0%bd%d1%82%d0%b0%d1%80%d0%b8%d0%b9-%d0%ba-%d1%81%d1%82%d0%b0%d1%82%d1%8c/" target="_blank">Задание 4. Оставить комментарий к статье</a></li>
+<li><a href="https://loadtestweb.wordpress.com/2017/03/02/fiddler-4-%d0%bd%d0%b0%d1%81%d1%82%d1%80%d0%be%d0%b9%d0%ba%d0%b0-%d0%b8-%d0%b8%d1%81%d0%bf%d0%be%d0%bb%d1%8c%d0%b7%d0%be%d0%b2%d0%b0%d0%bd%d0%b8%d0%b5-%d1%81-https/">Fiddler 4. Настройка HTTPS</a></li>
+</ul><br />  <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gocomments/loadtestweb.wordpress.com/97/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/comments/loadtestweb.wordpress.com/97/" /></a> <img alt="" border="0" src="https://pixel.wp.com/b.gif?host=loadtestweb.wordpress.com&#038;blog=124701137&#038;post=97&#038;subd=loadtestweb&#038;ref=&#038;feed=1" width="1" height="1" />]]></content:encoded>
+			<wfw:commentRss>https://loadtestweb.wordpress.com/2017/02/25/test-8/feed/</wfw:commentRss>
+		<slash:comments>16</slash:comments>
+	
+		<media:thumbnail url="https://loadtestweb.files.wordpress.com/2017/02/robot-7-look-com-ua.jpg" />
+		<media:content url="http://loadtestweb.files.wordpress.com/2017/02/robot-7-look-com-ua.jpg" medium="image">
+			<media:title type="html">robot-7-look-com-ua</media:title>
+		</media:content>
+
+		<media:content url="http://0.gravatar.com/avatar/993da3fa683fc7e2af464c5b9886609f?s=96&#38;d=identicon&#38;r=G" medium="image">
+			<media:title type="html">loadtestweb</media:title>
+		</media:content>
+	</item>
+		<item>
+		<title>Пример статьи # 7</title>
+		<link>https://loadtestweb.wordpress.com/2017/02/25/test-7/</link>
+		<comments>https://loadtestweb.wordpress.com/2017/02/25/test-7/#comments</comments>
+		<pubDate>Sat, 25 Feb 2017 17:51:11 +0000</pubDate>
+		<dc:creator><![CDATA[loadtestweb]]></dc:creator>
+				<category><![CDATA[Тестовая страница]]></category>
+		<category><![CDATA[тестовые данные]]></category>
+		<category><![CDATA[test]]></category>
+
+		<guid isPermaLink="false">http://loadtestweb.wordpress.com/?p=93</guid>
+		<description><![CDATA[Цель — оставить комментарий к статье.<img alt="" border="0" src="https://pixel.wp.com/b.gif?host=loadtestweb.wordpress.com&#038;blog=124701137&#038;post=93&#038;subd=loadtestweb&#038;ref=&#038;feed=1" width="1" height="1" />]]></description>
+				<content:encoded><![CDATA[<h2>Цель</h2>
+<p>Оставить комментарий к статье от гостевого пользователя.</p>
+<p>Дополнительное задание — оставить комментарий от выполнившего аутентификацию пользователя.</p>
+<p>Полный сценарий работы:</p>
+<ul>
+<li><a href="https://loadtestweb.wordpress.com/2017/02/25/%d0%b8%d0%b7%d0%b1%d1%80%d0%b0%d0%bd%d0%bd%d0%be%d0%b5-%d1%81%d0%be%d0%b4%d0%b5%d1%80%d0%b6%d0%b8%d0%bc%d0%be%d0%b5/" target="_blank">Избранное содержимое</a></li>
+</ul>
+<h2>Способы получения значений полей</h2>
+<p>Чтобы успешно опубликовать комментарий, нужно извлечь с формы csrf-токены, токены аутентификации, идентификатор статьи и многие другие поля.<br />
+Для извлечения токенов и других полей рекомендуется использовать следующие способы:</p>
+<ul>
+<li>jquery/css — селектор</li>
+<li>регулярные выражения</li>
+<li>xpath-селектор</li>
+</ul>
+<h2>Инструкции и подсказки</h2>
+<ul>
+<li><a href="https://loadtestweb.wordpress.com/2017/03/02/%d0%b7%d0%b0%d0%b4%d0%b0%d0%bd%d0%b8%d0%b5-4-%d0%be%d1%81%d1%82%d0%b0%d0%b2%d0%b8%d1%82%d1%8c-%d0%ba%d0%be%d0%bc%d0%bc%d0%b5%d0%bd%d1%82%d0%b0%d1%80%d0%b8%d0%b9-%d0%ba-%d1%81%d1%82%d0%b0%d1%82%d1%8c/" target="_blank">Задание 4. Оставить комментарий к статье</a></li>
+<li><a href="https://loadtestweb.wordpress.com/2017/03/02/fiddler-4-%d0%bd%d0%b0%d1%81%d1%82%d1%80%d0%be%d0%b9%d0%ba%d0%b0-%d0%b8-%d0%b8%d1%81%d0%bf%d0%be%d0%bb%d1%8c%d0%b7%d0%be%d0%b2%d0%b0%d0%bd%d0%b8%d0%b5-%d1%81-https/">Fiddler 4. Настройка HTTPS</a></li>
+</ul><br />  <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gocomments/loadtestweb.wordpress.com/93/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/comments/loadtestweb.wordpress.com/93/" /></a> <img alt="" border="0" src="https://pixel.wp.com/b.gif?host=loadtestweb.wordpress.com&#038;blog=124701137&#038;post=93&#038;subd=loadtestweb&#038;ref=&#038;feed=1" width="1" height="1" />]]></content:encoded>
+			<wfw:commentRss>https://loadtestweb.wordpress.com/2017/02/25/test-7/feed/</wfw:commentRss>
+		<slash:comments>66</slash:comments>
+	
+		<media:thumbnail url="https://loadtestweb.files.wordpress.com/2017/02/robot-6-look-com-ua.jpg" />
+		<media:content url="http://loadtestweb.files.wordpress.com/2017/02/robot-6-look-com-ua.jpg" medium="image">
+			<media:title type="html">robot-6-look-com-ua</media:title>
+		</media:content>
+
+		<media:content url="http://0.gravatar.com/avatar/993da3fa683fc7e2af464c5b9886609f?s=96&#38;d=identicon&#38;r=G" medium="image">
+			<media:title type="html">loadtestweb</media:title>
+		</media:content>
+	</item>
+		<item>
+		<title>Пример статьи # 6</title>
+		<link>https://loadtestweb.wordpress.com/2017/02/25/test-6/</link>
+		<comments>https://loadtestweb.wordpress.com/2017/02/25/test-6/#comments</comments>
+		<pubDate>Sat, 25 Feb 2017 17:49:59 +0000</pubDate>
+		<dc:creator><![CDATA[loadtestweb]]></dc:creator>
+				<category><![CDATA[Тестовая страница]]></category>
+		<category><![CDATA[тестовые данные]]></category>
+		<category><![CDATA[test]]></category>
+
+		<guid isPermaLink="false">http://loadtestweb.wordpress.com/?p=90</guid>
+		<description><![CDATA[Цель — оставить комментарий к статье.<img alt="" border="0" src="https://pixel.wp.com/b.gif?host=loadtestweb.wordpress.com&#038;blog=124701137&#038;post=90&#038;subd=loadtestweb&#038;ref=&#038;feed=1" width="1" height="1" />]]></description>
+				<content:encoded><![CDATA[<h2>Цель</h2>
+<p>Оставить комментарий к статье от гостевого пользователя.</p>
+<p>Дополнительное задание — оставить комментарий от выполнившего аутентификацию пользователя.</p>
+<p>Полный сценарий работы:</p>
+<ul>
+<li><a href="https://loadtestweb.wordpress.com/2017/02/25/%d0%b8%d0%b7%d0%b1%d1%80%d0%b0%d0%bd%d0%bd%d0%be%d0%b5-%d1%81%d0%be%d0%b4%d0%b5%d1%80%d0%b6%d0%b8%d0%bc%d0%be%d0%b5/" target="_blank">Избранное содержимое</a></li>
+</ul>
+<h2>Способы получения значений полей</h2>
+<p>Чтобы успешно опубликовать комментарий, нужно извлечь с формы csrf-токены, токены аутентификации, идентификатор статьи и многие другие поля.<br />
+Для извлечения токенов и других полей рекомендуется использовать следующие способы:</p>
+<ul>
+<li>jquery/css — селектор</li>
+<li>регулярные выражения</li>
+<li>xpath-селектор</li>
+</ul>
+<h2>Инструкции и подсказки</h2>
+<ul>
+<li><a href="https://loadtestweb.wordpress.com/2017/03/02/%d0%b7%d0%b0%d0%b4%d0%b0%d0%bd%d0%b8%d0%b5-4-%d0%be%d1%81%d1%82%d0%b0%d0%b2%d0%b8%d1%82%d1%8c-%d0%ba%d0%be%d0%bc%d0%bc%d0%b5%d0%bd%d1%82%d0%b0%d1%80%d0%b8%d0%b9-%d0%ba-%d1%81%d1%82%d0%b0%d1%82%d1%8c/" target="_blank">Задание 4. Оставить комментарий к статье</a></li>
+<li><a href="https://loadtestweb.wordpress.com/2017/03/02/fiddler-4-%d0%bd%d0%b0%d1%81%d1%82%d1%80%d0%be%d0%b9%d0%ba%d0%b0-%d0%b8-%d0%b8%d1%81%d0%bf%d0%be%d0%bb%d1%8c%d0%b7%d0%be%d0%b2%d0%b0%d0%bd%d0%b8%d0%b5-%d1%81-https/">Fiddler 4. Настройка HTTPS</a></li>
+</ul><br />  <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gocomments/loadtestweb.wordpress.com/90/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/comments/loadtestweb.wordpress.com/90/" /></a> <img alt="" border="0" src="https://pixel.wp.com/b.gif?host=loadtestweb.wordpress.com&#038;blog=124701137&#038;post=90&#038;subd=loadtestweb&#038;ref=&#038;feed=1" width="1" height="1" />]]></content:encoded>
+			<wfw:commentRss>https://loadtestweb.wordpress.com/2017/02/25/test-6/feed/</wfw:commentRss>
+		<slash:comments>9</slash:comments>
+	
+		<media:thumbnail url="https://loadtestweb.files.wordpress.com/2017/02/robot-5-look-com-ua.jpg" />
+		<media:content url="http://loadtestweb.files.wordpress.com/2017/02/robot-5-look-com-ua.jpg" medium="image">
+			<media:title type="html">robot-5-look-com-ua</media:title>
+		</media:content>
+
+		<media:content url="http://0.gravatar.com/avatar/993da3fa683fc7e2af464c5b9886609f?s=96&#38;d=identicon&#38;r=G" medium="image">
+			<media:title type="html">loadtestweb</media:title>
+		</media:content>
+	</item>
+		<item>
+		<title>Пример статьи # 5</title>
+		<link>https://loadtestweb.wordpress.com/2017/02/25/test-5/</link>
+		<comments>https://loadtestweb.wordpress.com/2017/02/25/test-5/#comments</comments>
+		<pubDate>Sat, 25 Feb 2017 17:48:50 +0000</pubDate>
+		<dc:creator><![CDATA[loadtestweb]]></dc:creator>
+				<category><![CDATA[Тестовая страница]]></category>
+		<category><![CDATA[тестовые данные]]></category>
+		<category><![CDATA[test]]></category>
+
+		<guid isPermaLink="false">http://loadtestweb.wordpress.com/?p=86</guid>
+		<description><![CDATA[Цель — оставить комментарий к статье.<img alt="" border="0" src="https://pixel.wp.com/b.gif?host=loadtestweb.wordpress.com&#038;blog=124701137&#038;post=86&#038;subd=loadtestweb&#038;ref=&#038;feed=1" width="1" height="1" />]]></description>
+				<content:encoded><![CDATA[<h2>Цель</h2>
+<p>Оставить комментарий к статье от гостевого пользователя.</p>
+<p>Дополнительное задание — оставить комментарий от выполнившего аутентификацию пользователя.</p>
+<p>Полный сценарий работы:</p>
+<ul>
+<li><a href="https://loadtestweb.wordpress.com/2017/02/25/%d0%b8%d0%b7%d0%b1%d1%80%d0%b0%d0%bd%d0%bd%d0%be%d0%b5-%d1%81%d0%be%d0%b4%d0%b5%d1%80%d0%b6%d0%b8%d0%bc%d0%be%d0%b5/" target="_blank">Избранное содержимое</a></li>
+</ul>
+<h2>Способы получения значений полей</h2>
+<p>Чтобы успешно опубликовать комментарий, нужно извлечь с формы csrf-токены, токены аутентификации, идентификатор статьи и многие другие поля.<br />
+Для извлечения токенов и других полей рекомендуется использовать следующие способы:</p>
+<ul>
+<li>jquery/css — селектор</li>
+<li>регулярные выражения</li>
+<li>xpath-селектор</li>
+</ul>
+<h2>Инструкции и подсказки</h2>
+<ul>
+<li><a href="https://loadtestweb.wordpress.com/2017/03/02/%d0%b7%d0%b0%d0%b4%d0%b0%d0%bd%d0%b8%d0%b5-4-%d0%be%d1%81%d1%82%d0%b0%d0%b2%d0%b8%d1%82%d1%8c-%d0%ba%d0%be%d0%bc%d0%bc%d0%b5%d0%bd%d1%82%d0%b0%d1%80%d0%b8%d0%b9-%d0%ba-%d1%81%d1%82%d0%b0%d1%82%d1%8c/" target="_blank">Задание 4. Оставить комментарий к статье</a></li>
+<li><a href="https://loadtestweb.wordpress.com/2017/03/02/fiddler-4-%d0%bd%d0%b0%d1%81%d1%82%d1%80%d0%be%d0%b9%d0%ba%d0%b0-%d0%b8-%d0%b8%d1%81%d0%bf%d0%be%d0%bb%d1%8c%d0%b7%d0%be%d0%b2%d0%b0%d0%bd%d0%b8%d0%b5-%d1%81-https/">Fiddler 4. Настройка HTTPS</a></li>
+</ul><br />  <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gocomments/loadtestweb.wordpress.com/86/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/comments/loadtestweb.wordpress.com/86/" /></a> <img alt="" border="0" src="https://pixel.wp.com/b.gif?host=loadtestweb.wordpress.com&#038;blog=124701137&#038;post=86&#038;subd=loadtestweb&#038;ref=&#038;feed=1" width="1" height="1" />]]></content:encoded>
+			<wfw:commentRss>https://loadtestweb.wordpress.com/2017/02/25/test-5/feed/</wfw:commentRss>
+		<slash:comments>3</slash:comments>
+	
+		<media:thumbnail url="https://loadtestweb.files.wordpress.com/2017/02/robot-4-look-com-ua.jpg" />
+		<media:content url="http://loadtestweb.files.wordpress.com/2017/02/robot-4-look-com-ua.jpg" medium="image">
+			<media:title type="html">robot-4-look-com-ua</media:title>
+		</media:content>
+
+		<media:content url="http://0.gravatar.com/avatar/993da3fa683fc7e2af464c5b9886609f?s=96&#38;d=identicon&#38;r=G" medium="image">
+			<media:title type="html">loadtestweb</media:title>
+		</media:content>
+	</item>
+		<item>
+		<title>Пример статьи # 4</title>
+		<link>https://loadtestweb.wordpress.com/2017/02/25/test-4/</link>
+		<comments>https://loadtestweb.wordpress.com/2017/02/25/test-4/#comments</comments>
+		<pubDate>Sat, 25 Feb 2017 14:30:11 +0000</pubDate>
+		<dc:creator><![CDATA[loadtestweb]]></dc:creator>
+				<category><![CDATA[Тестовая страница]]></category>
+		<category><![CDATA[тестовые данные]]></category>
+		<category><![CDATA[test]]></category>
+
+		<guid isPermaLink="false">http://loadtestweb.wordpress.com/?p=77</guid>
+		<description><![CDATA[Цель — оставить комментарий к статье.<img alt="" border="0" src="https://pixel.wp.com/b.gif?host=loadtestweb.wordpress.com&#038;blog=124701137&#038;post=77&#038;subd=loadtestweb&#038;ref=&#038;feed=1" width="1" height="1" />]]></description>
+				<content:encoded><![CDATA[<h2>Цель</h2>
+<p>Оставить комментарий к статье от гостевого пользователя.</p>
+<p>Дополнительное задание &#8212; оставить комментарий от выполнившего аутентификацию пользователя.</p>
+<p>Полный сценарий работы:</p>
+<ul>
+<li><a href="https://loadtestweb.wordpress.com/2017/02/25/%d0%b8%d0%b7%d0%b1%d1%80%d0%b0%d0%bd%d0%bd%d0%be%d0%b5-%d1%81%d0%be%d0%b4%d0%b5%d1%80%d0%b6%d0%b8%d0%bc%d0%be%d0%b5/" target="_blank">Избранное содержимое</a></li>
+</ul>
+<h2>Способы получения токена</h2>
+<p>Чтобы успешно опубликовать комментарий, нужно извлечь с формы csrf-токен.<br />
+Для извлечения токенов и других полей использовать следующие способы:</p>
+<ul>
+<li>jquery/css — селектор</li>
+<li>регулярные выражения</li>
+<li>xpath-селектор</li>
+</ul>
+<h2>Инструкции и подсказки</h2>
+<ul>
+<li><a href="https://loadtestweb.wordpress.com/2017/03/02/%d0%b7%d0%b0%d0%b4%d0%b0%d0%bd%d0%b8%d0%b5-4-%d0%be%d1%81%d1%82%d0%b0%d0%b2%d0%b8%d1%82%d1%8c-%d0%ba%d0%be%d0%bc%d0%bc%d0%b5%d0%bd%d1%82%d0%b0%d1%80%d0%b8%d0%b9-%d0%ba-%d1%81%d1%82%d0%b0%d1%82%d1%8c/" target="_blank">Задание 4. Оставить комментарий к статье</a></li>
+<li><a href="https://loadtestweb.wordpress.com/2017/03/02/fiddler-4-%d0%bd%d0%b0%d1%81%d1%82%d1%80%d0%be%d0%b9%d0%ba%d0%b0-%d0%b8-%d0%b8%d1%81%d0%bf%d0%be%d0%bb%d1%8c%d0%b7%d0%be%d0%b2%d0%b0%d0%bd%d0%b8%d0%b5-%d1%81-https/">Fiddler 4. Настройка HTTPS</a></li>
+</ul><br />  <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gocomments/loadtestweb.wordpress.com/77/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/comments/loadtestweb.wordpress.com/77/" /></a> <img alt="" border="0" src="https://pixel.wp.com/b.gif?host=loadtestweb.wordpress.com&#038;blog=124701137&#038;post=77&#038;subd=loadtestweb&#038;ref=&#038;feed=1" width="1" height="1" />]]></content:encoded>
+			<wfw:commentRss>https://loadtestweb.wordpress.com/2017/02/25/test-4/feed/</wfw:commentRss>
+		<slash:comments>117</slash:comments>
+	
+		<media:thumbnail url="https://loadtestweb.files.wordpress.com/2017/02/robot-3-look-com-ua.jpg" />
+		<media:content url="http://loadtestweb.files.wordpress.com/2017/02/robot-3-look-com-ua.jpg" medium="image">
+			<media:title type="html">robot-3-look-com-ua</media:title>
+		</media:content>
+
+		<media:content url="http://0.gravatar.com/avatar/993da3fa683fc7e2af464c5b9886609f?s=96&#38;d=identicon&#38;r=G" medium="image">
+			<media:title type="html">loadtestweb</media:title>
+		</media:content>
+	</item>
+		<item>
+		<title>Пример статьи # 3</title>
+		<link>https://loadtestweb.wordpress.com/2017/02/25/test-3/</link>
+		<comments>https://loadtestweb.wordpress.com/2017/02/25/test-3/#comments</comments>
+		<pubDate>Sat, 25 Feb 2017 14:28:49 +0000</pubDate>
+		<dc:creator><![CDATA[loadtestweb]]></dc:creator>
+				<category><![CDATA[Тестовая страница]]></category>
+		<category><![CDATA[JMeter]]></category>
+		<category><![CDATA[LoadRunner]]></category>
+		<category><![CDATA[тестовые данные]]></category>
+
+		<guid isPermaLink="false">http://loadtestweb.wordpress.com/?p=72</guid>
+		<description><![CDATA[Цель — оставить комментарий к статье.<img alt="" border="0" src="https://pixel.wp.com/b.gif?host=loadtestweb.wordpress.com&#038;blog=124701137&#038;post=72&#038;subd=loadtestweb&#038;ref=&#038;feed=1" width="1" height="1" />]]></description>
+				<content:encoded><![CDATA[<h2>Цель</h2>
+<p>Оставить комментарий к статье от гостевого пользователя.</p>
+<p>Дополнительное задание &#8212; оставить комментарий от выполнившего аутентификацию пользователя.</p>
+<p>Полный сценарий работы:</p>
+<ul>
+<li><a href="https://loadtestweb.wordpress.com/2017/02/25/%d0%b8%d0%b7%d0%b1%d1%80%d0%b0%d0%bd%d0%bd%d0%be%d0%b5-%d1%81%d0%be%d0%b4%d0%b5%d1%80%d0%b6%d0%b8%d0%bc%d0%be%d0%b5/" target="_blank">Избранное содержимое</a></li>
+</ul>
+<h2>Способы получения токена</h2>
+<p>Чтобы успешно опубликовать комментарий, нужно извлечь с формы csrf-токен.<br />
+Для извлечения токенов и других полей использовать следующие способы:</p>
+<ul>
+<li>jquery/css — селектор</li>
+<li>регулярные выражения</li>
+<li>xpath-селектор</li>
+</ul>
+<h2>Инструкции и подсказки</h2>
+<ul>
+<li><a href="https://loadtestweb.wordpress.com/2017/03/02/%d0%b7%d0%b0%d0%b4%d0%b0%d0%bd%d0%b8%d0%b5-4-%d0%be%d1%81%d1%82%d0%b0%d0%b2%d0%b8%d1%82%d1%8c-%d0%ba%d0%be%d0%bc%d0%bc%d0%b5%d0%bd%d1%82%d0%b0%d1%80%d0%b8%d0%b9-%d0%ba-%d1%81%d1%82%d0%b0%d1%82%d1%8c/" target="_blank">Задание 4. Оставить комментарий к статье</a></li>
+<li><a href="https://loadtestweb.wordpress.com/2017/03/02/fiddler-4-%d0%bd%d0%b0%d1%81%d1%82%d1%80%d0%be%d0%b9%d0%ba%d0%b0-%d0%b8-%d0%b8%d1%81%d0%bf%d0%be%d0%bb%d1%8c%d0%b7%d0%be%d0%b2%d0%b0%d0%bd%d0%b8%d0%b5-%d1%81-https/">Fiddler 4. Настройка HTTPS</a></li>
+</ul><br />  <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gocomments/loadtestweb.wordpress.com/72/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/comments/loadtestweb.wordpress.com/72/" /></a> <img alt="" border="0" src="https://pixel.wp.com/b.gif?host=loadtestweb.wordpress.com&#038;blog=124701137&#038;post=72&#038;subd=loadtestweb&#038;ref=&#038;feed=1" width="1" height="1" />]]></content:encoded>
+			<wfw:commentRss>https://loadtestweb.wordpress.com/2017/02/25/test-3/feed/</wfw:commentRss>
+		<slash:comments>31</slash:comments>
+	
+		<media:thumbnail url="https://loadtestweb.files.wordpress.com/2017/02/robot-2-look-com-ua.jpg" />
+		<media:content url="http://loadtestweb.files.wordpress.com/2017/02/robot-2-look-com-ua.jpg" medium="image">
+			<media:title type="html">robot-2-look-com-ua</media:title>
+		</media:content>
+
+		<media:content url="http://0.gravatar.com/avatar/993da3fa683fc7e2af464c5b9886609f?s=96&#38;d=identicon&#38;r=G" medium="image">
+			<media:title type="html">loadtestweb</media:title>
+		</media:content>
+	</item>
+		<item>
+		<title>Пример статьи # 2</title>
+		<link>https://loadtestweb.wordpress.com/2017/02/25/test-2/</link>
+		<comments>https://loadtestweb.wordpress.com/2017/02/25/test-2/#comments</comments>
+		<pubDate>Sat, 25 Feb 2017 14:06:55 +0000</pubDate>
+		<dc:creator><![CDATA[loadtestweb]]></dc:creator>
+				<category><![CDATA[Тестовая страница]]></category>
+		<category><![CDATA[JMeter]]></category>
+		<category><![CDATA[тестовые данные]]></category>
+		<category><![CDATA[test]]></category>
+
+		<guid isPermaLink="false">http://loadtestweb.wordpress.com/?p=65</guid>
+		<description><![CDATA[Цель — оставить комментарий к статье.<img alt="" border="0" src="https://pixel.wp.com/b.gif?host=loadtestweb.wordpress.com&#038;blog=124701137&#038;post=65&#038;subd=loadtestweb&#038;ref=&#038;feed=1" width="1" height="1" />]]></description>
+				<content:encoded><![CDATA[<h2>Цель</h2>
+<p>Оставить комментарий к статье от гостевого пользователя.</p>
+<p>Дополнительное задание &#8212; оставить комментарий от выполнившего аутентификацию пользователя.</p>
+<p>Полный сценарий работы:</p>
+<ul>
+<li><a href="https://loadtestweb.wordpress.com/2017/02/25/%d0%b8%d0%b7%d0%b1%d1%80%d0%b0%d0%bd%d0%bd%d0%be%d0%b5-%d1%81%d0%be%d0%b4%d0%b5%d1%80%d0%b6%d0%b8%d0%bc%d0%be%d0%b5/" target="_blank">Избранное содержимое</a></li>
+</ul>
+<h2>Способы получения токена</h2>
+<p>Чтобы успешно опубликовать комментарий, нужно извлечь с формы csrf-токен.<br />
+Для извлечения токенов и других полей использовать следующие способы:</p>
+<ul>
+<li>jquery/css — селектор</li>
+<li>регулярные выражения</li>
+<li>xpath-селектор</li>
+</ul>
+<h2>Инструкции и подсказки</h2>
+<ul>
+<li><a href="https://loadtestweb.wordpress.com/2017/03/02/%d0%b7%d0%b0%d0%b4%d0%b0%d0%bd%d0%b8%d0%b5-4-%d0%be%d1%81%d1%82%d0%b0%d0%b2%d0%b8%d1%82%d1%8c-%d0%ba%d0%be%d0%bc%d0%bc%d0%b5%d0%bd%d1%82%d0%b0%d1%80%d0%b8%d0%b9-%d0%ba-%d1%81%d1%82%d0%b0%d1%82%d1%8c/" target="_blank">Задание 4. Оставить комментарий к статье</a></li>
+<li><a href="https://loadtestweb.wordpress.com/2017/03/02/fiddler-4-%d0%bd%d0%b0%d1%81%d1%82%d1%80%d0%be%d0%b9%d0%ba%d0%b0-%d0%b8-%d0%b8%d1%81%d0%bf%d0%be%d0%bb%d1%8c%d0%b7%d0%be%d0%b2%d0%b0%d0%bd%d0%b8%d0%b5-%d1%81-https/">Fiddler 4. Настройка HTTPS</a></li>
+</ul><br />  <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gocomments/loadtestweb.wordpress.com/65/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/comments/loadtestweb.wordpress.com/65/" /></a> <img alt="" border="0" src="https://pixel.wp.com/b.gif?host=loadtestweb.wordpress.com&#038;blog=124701137&#038;post=65&#038;subd=loadtestweb&#038;ref=&#038;feed=1" width="1" height="1" />]]></content:encoded>
+			<wfw:commentRss>https://loadtestweb.wordpress.com/2017/02/25/test-2/feed/</wfw:commentRss>
+		<slash:comments>99</slash:comments>
+	
+		<media:thumbnail url="https://loadtestweb.files.wordpress.com/2017/02/robot-1-look-com-ua.jpg" />
+		<media:content url="http://loadtestweb.files.wordpress.com/2017/02/robot-1-look-com-ua.jpg" medium="image">
+			<media:title type="html">robot-1-look-com-ua</media:title>
+		</media:content>
+
+		<media:content url="http://0.gravatar.com/avatar/993da3fa683fc7e2af464c5b9886609f?s=96&#38;d=identicon&#38;r=G" medium="image">
+			<media:title type="html">loadtestweb</media:title>
+		</media:content>
+	</item>
+		<item>
+		<title>Пример статьи # 1</title>
+		<link>https://loadtestweb.wordpress.com/2017/02/25/test-1/</link>
+		<comments>https://loadtestweb.wordpress.com/2017/02/25/test-1/#comments</comments>
+		<pubDate>Sat, 25 Feb 2017 13:31:14 +0000</pubDate>
+		<dc:creator><![CDATA[loadtestweb]]></dc:creator>
+				<category><![CDATA[Тестовая страница]]></category>
+		<category><![CDATA[тестовые данные]]></category>
+		<category><![CDATA[test]]></category>
+
+		<guid isPermaLink="false">http://loadtestweb.wordpress.com/?p=54</guid>
+		<description><![CDATA[Цель - оставить комментарий к статье.<img alt="" border="0" src="https://pixel.wp.com/b.gif?host=loadtestweb.wordpress.com&#038;blog=124701137&#038;post=54&#038;subd=loadtestweb&#038;ref=&#038;feed=1" width="1" height="1" />]]></description>
+				<content:encoded><![CDATA[<h2>Цель</h2>
+<p>Оставить комментарий к статье от гостевого пользователя.</p>
+<p>Дополнительное задание — оставить комментарий от выполнившего аутентификацию пользователя.</p>
+<p>Полный сценарий работы:</p>
+<ul>
+<li><a href="https://loadtestweb.wordpress.com/2017/02/25/%d0%b8%d0%b7%d0%b1%d1%80%d0%b0%d0%bd%d0%bd%d0%be%d0%b5-%d1%81%d0%be%d0%b4%d0%b5%d1%80%d0%b6%d0%b8%d0%bc%d0%be%d0%b5/" target="_blank">Избранное содержимое</a></li>
+</ul>
+<h2>Способы получения значений полей</h2>
+<p>Чтобы успешно опубликовать комментарий, нужно извлечь с формы csrf-токены, токены аутентификации, идентификатор статьи и многие другие поля.<br />
+Для извлечения токенов и других полей рекомендуется использовать следующие способы:</p>
+<ul>
+<li>jquery/css — селектор</li>
+<li>регулярные выражения</li>
+<li>xpath-селектор</li>
+</ul>
+<h2>Инструкции и подсказки</h2>
+<ul>
+<li><a href="https://loadtestweb.wordpress.com/2017/03/02/%d0%b7%d0%b0%d0%b4%d0%b0%d0%bd%d0%b8%d0%b5-4-%d0%be%d1%81%d1%82%d0%b0%d0%b2%d0%b8%d1%82%d1%8c-%d0%ba%d0%be%d0%bc%d0%bc%d0%b5%d0%bd%d1%82%d0%b0%d1%80%d0%b8%d0%b9-%d0%ba-%d1%81%d1%82%d0%b0%d1%82%d1%8c/" target="_blank">Задание 4. Оставить комментарий к статье</a></li>
+<li><a href="https://loadtestweb.wordpress.com/2017/03/02/fiddler-4-%d0%bd%d0%b0%d1%81%d1%82%d1%80%d0%be%d0%b9%d0%ba%d0%b0-%d0%b8-%d0%b8%d1%81%d0%bf%d0%be%d0%bb%d1%8c%d0%b7%d0%be%d0%b2%d0%b0%d0%bd%d0%b8%d0%b5-%d1%81-https/">Fiddler 4. Настройка HTTPS</a></li>
+</ul><br />  <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gocomments/loadtestweb.wordpress.com/54/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/comments/loadtestweb.wordpress.com/54/" /></a> <img alt="" border="0" src="https://pixel.wp.com/b.gif?host=loadtestweb.wordpress.com&#038;blog=124701137&#038;post=54&#038;subd=loadtestweb&#038;ref=&#038;feed=1" width="1" height="1" />]]></content:encoded>
+			<wfw:commentRss>https://loadtestweb.wordpress.com/2017/02/25/test-1/feed/</wfw:commentRss>
+		<slash:comments>147</slash:comments>
+	
+		<media:thumbnail url="https://loadtestweb.files.wordpress.com/2017/02/robot-look-com-ua.jpg" />
+		<media:content url="http://loadtestweb.files.wordpress.com/2017/02/robot-look-com-ua.jpg" medium="image">
+			<media:title type="html">robot-look-com-ua</media:title>
+		</media:content>
+
+		<media:content url="http://0.gravatar.com/avatar/993da3fa683fc7e2af464c5b9886609f?s=96&#38;d=identicon&#38;r=G" medium="image">
+			<media:title type="html">loadtestweb</media:title>
+		</media:content>
+	</item>
+		<item>
+		<title>Рабочее место нагрузочника</title>
+		<link>https://loadtestweb.wordpress.com/2017/02/25/%d1%80%d0%b0%d0%b1%d0%be%d1%87%d0%b5%d0%b5-%d0%bc%d0%b5%d1%81%d1%82%d0%be-%d0%bd%d0%b0%d0%b3%d1%80%d1%83%d0%b7%d0%be%d1%87%d0%bd%d0%b8%d0%ba%d0%b0/</link>
+		<comments>https://loadtestweb.wordpress.com/2017/02/25/%d1%80%d0%b0%d0%b1%d0%be%d1%87%d0%b5%d0%b5-%d0%bc%d0%b5%d1%81%d1%82%d0%be-%d0%bd%d0%b0%d0%b3%d1%80%d1%83%d0%b7%d0%be%d1%87%d0%bd%d0%b8%d0%ba%d0%b0/#respond</comments>
+		<pubDate>Sat, 25 Feb 2017 12:30:00 +0000</pubDate>
+		<dc:creator><![CDATA[loadtestweb]]></dc:creator>
+				<category><![CDATA[Без рубрики]]></category>
+
+		<guid isPermaLink="false">http://loadtestweb.wordpress.com/?p=32</guid>
+		<description><![CDATA[Apache.JMeter HP LoadRunner<img alt="" border="0" src="https://pixel.wp.com/b.gif?host=loadtestweb.wordpress.com&#038;blog=124701137&#038;post=32&#038;subd=loadtestweb&#038;ref=&#038;feed=1" width="1" height="1" />]]></description>
+				<content:encoded><![CDATA[<h2>Apache.JMeter</h2>
+<h2>HP LoadRunner</h2><br />  <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gocomments/loadtestweb.wordpress.com/32/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/comments/loadtestweb.wordpress.com/32/" /></a> <img alt="" border="0" src="https://pixel.wp.com/b.gif?host=loadtestweb.wordpress.com&#038;blog=124701137&#038;post=32&#038;subd=loadtestweb&#038;ref=&#038;feed=1" width="1" height="1" />]]></content:encoded>
+			<wfw:commentRss>https://loadtestweb.wordpress.com/2017/02/25/%d1%80%d0%b0%d0%b1%d0%be%d1%87%d0%b5%d0%b5-%d0%bc%d0%b5%d1%81%d1%82%d0%be-%d0%bd%d0%b0%d0%b3%d1%80%d1%83%d0%b7%d0%be%d1%87%d0%bd%d0%b8%d0%ba%d0%b0/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	
+		<media:thumbnail url="https://loadtestweb.files.wordpress.com/2017/02/computer_desk.jpg" />
+		<media:content url="http://loadtestweb.files.wordpress.com/2017/02/computer_desk.jpg" medium="image">
+			<media:title type="html">computer_desk</media:title>
+		</media:content>
+
+		<media:content url="http://0.gravatar.com/avatar/993da3fa683fc7e2af464c5b9886609f?s=96&#38;d=identicon&#38;r=G" medium="image">
+			<media:title type="html">loadtestweb</media:title>
+		</media:content>
+	</item>
+		<item>
+		<title>Первая запись в блоге</title>
+		<link>https://loadtestweb.wordpress.com/2017/02/25/%d0%bf%d0%b5%d1%80%d0%b2%d0%b0%d1%8f-%d0%b7%d0%b0%d0%bf%d0%b8%d1%81%d1%8c-%d0%b2-%d0%b1%d0%bb%d0%be%d0%b3%d0%b5/</link>
+		<comments>https://loadtestweb.wordpress.com/2017/02/25/%d0%bf%d0%b5%d1%80%d0%b2%d0%b0%d1%8f-%d0%b7%d0%b0%d0%bf%d0%b8%d1%81%d1%8c-%d0%b2-%d0%b1%d0%bb%d0%be%d0%b3%d0%b5/#comments</comments>
+		<pubDate>Sat, 25 Feb 2017 09:37:31 +0000</pubDate>
+		<dc:creator><![CDATA[loadtestweb]]></dc:creator>
+				<category><![CDATA[Без рубрики]]></category>
+
+		<guid isPermaLink="false">http://loadtestweb.wordpress.com/?p=4</guid>
+		<description><![CDATA[Это цитата для вашей первой записи.<img alt="" border="0" src="https://pixel.wp.com/b.gif?host=loadtestweb.wordpress.com&#038;blog=124701137&#038;post=4&#038;subd=loadtestweb&#038;ref=&#038;feed=1" width="1" height="1" />]]></description>
+				<content:encoded><![CDATA[<p>Это ваша самая первая запись. Чтобы отредактировать или удалить её, нажмите кнопку «Изменить» или <a href="https://wordpress.com/post">создайте новую запись</a>. В этой записи можно рассказать читателям, почему вы завели блог и что планируете в нём публиковать.</p><br />  <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gocomments/loadtestweb.wordpress.com/4/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/comments/loadtestweb.wordpress.com/4/" /></a> <img alt="" border="0" src="https://pixel.wp.com/b.gif?host=loadtestweb.wordpress.com&#038;blog=124701137&#038;post=4&#038;subd=loadtestweb&#038;ref=&#038;feed=1" width="1" height="1" />]]></content:encoded>
+			<wfw:commentRss>https://loadtestweb.wordpress.com/2017/02/25/%d0%bf%d0%b5%d1%80%d0%b2%d0%b0%d1%8f-%d0%b7%d0%b0%d0%bf%d0%b8%d1%81%d1%8c-%d0%b2-%d0%b1%d0%bb%d0%be%d0%b3%d0%b5/feed/</wfw:commentRss>
+		<slash:comments>3</slash:comments>
+	
+		<media:thumbnail url="https://loadtestweb.files.wordpress.com/2017/02/surfing-1082214_1920.jpg" />
+		<media:content url="http://loadtestweb.files.wordpress.com/2017/02/surfing-1082214_1920.jpg" medium="image">
+			<media:title type="html">Placeholder Image</media:title>
+		</media:content>
+
+		<media:content url="http://0.gravatar.com/avatar/993da3fa683fc7e2af464c5b9886609f?s=96&#38;d=identicon&#38;r=G" medium="image">
+			<media:title type="html">loadtestweb</media:title>
+		</media:content>
+	</item>
+		<item>
+		<title>Заголовок записи в блоге</title>
+		<link>https://loadtestweb.wordpress.com/2017/02/25/%d0%b7%d0%b0%d0%b3%d0%be%d0%bb%d0%be%d0%b2%d0%be%d0%ba-%d0%b7%d0%b0%d0%bf%d0%b8%d1%81%d0%b8-%d0%b2-%d0%b1%d0%bb%d0%be%d0%b3%d0%b5/</link>
+		<comments>https://loadtestweb.wordpress.com/2017/02/25/%d0%b7%d0%b0%d0%b3%d0%be%d0%bb%d0%be%d0%b2%d0%be%d0%ba-%d0%b7%d0%b0%d0%bf%d0%b8%d1%81%d0%b8-%d0%b2-%d0%b1%d0%bb%d0%be%d0%b3%d0%b5/#comments</comments>
+		<pubDate>Sat, 25 Feb 2017 09:37:30 +0000</pubDate>
+		<dc:creator><![CDATA[loadtestweb]]></dc:creator>
+				<category><![CDATA[Без рубрики]]></category>
+
+		<guid isPermaLink="false">http://loadtestweb.wordpress.com/?p=5</guid>
+		<description><![CDATA[Это цитата для вашей второй записи.<img alt="" border="0" src="https://pixel.wp.com/b.gif?host=loadtestweb.wordpress.com&#038;blog=124701137&#038;post=5&#038;subd=loadtestweb&#038;ref=&#038;feed=1" width="1" height="1" />]]></description>
+				<content:encoded><![CDATA[<p>Это ещё одна запись. Выберите элемент «Изменить», чтобы отредактировать или удалить её, или <a href="https://wordpress.com/post">создайте новую запись</a>. Если вы хотите написать что-нибудь ещё, расскажите читателям, почему завели блог и что планируете в нём публиковать.</p><br />  <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gocomments/loadtestweb.wordpress.com/5/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/comments/loadtestweb.wordpress.com/5/" /></a> <img alt="" border="0" src="https://pixel.wp.com/b.gif?host=loadtestweb.wordpress.com&#038;blog=124701137&#038;post=5&#038;subd=loadtestweb&#038;ref=&#038;feed=1" width="1" height="1" />]]></content:encoded>
+			<wfw:commentRss>https://loadtestweb.wordpress.com/2017/02/25/%d0%b7%d0%b0%d0%b3%d0%be%d0%bb%d0%be%d0%b2%d0%be%d0%ba-%d0%b7%d0%b0%d0%bf%d0%b8%d1%81%d0%b8-%d0%b2-%d0%b1%d0%bb%d0%be%d0%b3%d0%b5/feed/</wfw:commentRss>
+		<slash:comments>10</slash:comments>
+	
+		<media:thumbnail url="https://loadtestweb.files.wordpress.com/2017/02/photo-1461409971633-aa0e46732112.jpg" />
+		<media:content url="http://loadtestweb.files.wordpress.com/2017/02/photo-1461409971633-aa0e46732112.jpg" medium="image">
+			<media:title type="html">Placeholder Image</media:title>
+		</media:content>
+
+		<media:content url="http://0.gravatar.com/avatar/993da3fa683fc7e2af464c5b9886609f?s=96&#38;d=identicon&#38;r=G" medium="image">
+			<media:title type="html">loadtestweb</media:title>
+		</media:content>
+	</item>
+		<item>
+		<title>Заголовок записи в блоге</title>
+		<link>https://loadtestweb.wordpress.com/2017/02/25/%d0%b7%d0%b0%d0%b3%d0%be%d0%bb%d0%be%d0%b2%d0%be%d0%ba-%d0%b7%d0%b0%d0%bf%d0%b8%d1%81%d0%b8-%d0%b2-%d0%b1%d0%bb%d0%be%d0%b3%d0%b5-2/</link>
+		<comments>https://loadtestweb.wordpress.com/2017/02/25/%d0%b7%d0%b0%d0%b3%d0%be%d0%bb%d0%be%d0%b2%d0%be%d0%ba-%d0%b7%d0%b0%d0%bf%d0%b8%d1%81%d0%b8-%d0%b2-%d0%b1%d0%bb%d0%be%d0%b3%d0%b5-2/#respond</comments>
+		<pubDate>Sat, 25 Feb 2017 09:37:29 +0000</pubDate>
+		<dc:creator><![CDATA[loadtestweb]]></dc:creator>
+				<category><![CDATA[Без рубрики]]></category>
+		<category><![CDATA[qwerty]]></category>
+
+		<guid isPermaLink="false">http://loadtestweb.wordpress.com/?p=6</guid>
+		<description><![CDATA[Это цитата из записи, которую вы сейчас читаете.<img alt="" border="0" src="https://pixel.wp.com/b.gif?host=loadtestweb.wordpress.com&#038;blog=124701137&#038;post=6&#038;subd=loadtestweb&#038;ref=&#038;feed=1" width="1" height="1" />]]></description>
+				<content:encoded><![CDATA[<p>Это стандартная запись в блоге. Выберите элемент «Изменить», чтобы отредактировать или удалить её, или <a href="https://wordpress.com/post">создайте новую запись</a>. Если вы хотите написать что-нибудь ещё, расскажите читателям, почему завели блог и что планируете в нём публиковать.</p><br />  <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gocomments/loadtestweb.wordpress.com/6/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/comments/loadtestweb.wordpress.com/6/" /></a> <img alt="" border="0" src="https://pixel.wp.com/b.gif?host=loadtestweb.wordpress.com&#038;blog=124701137&#038;post=6&#038;subd=loadtestweb&#038;ref=&#038;feed=1" width="1" height="1" />]]></content:encoded>
+			<wfw:commentRss>https://loadtestweb.wordpress.com/2017/02/25/%d0%b7%d0%b0%d0%b3%d0%be%d0%bb%d0%be%d0%b2%d0%be%d0%ba-%d0%b7%d0%b0%d0%bf%d0%b8%d1%81%d0%b8-%d0%b2-%d0%b1%d0%bb%d0%be%d0%b3%d0%b5-2/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	
+		<media:thumbnail url="https://loadtestweb.files.wordpress.com/2017/02/chainlink-691921_1280.jpg" />
+		<media:content url="http://loadtestweb.files.wordpress.com/2017/02/chainlink-691921_1280.jpg" medium="image">
+			<media:title type="html">Placeholder Image</media:title>
+		</media:content>
+
+		<media:content url="http://0.gravatar.com/avatar/993da3fa683fc7e2af464c5b9886609f?s=96&#38;d=identicon&#38;r=G" medium="image">
+			<media:title type="html">loadtestweb</media:title>
+		</media:content>
+	</item>
+		<item>
+		<title>Избранное содержимое</title>
+		<link>https://loadtestweb.wordpress.com/2017/02/25/%d0%b8%d0%b7%d0%b1%d1%80%d0%b0%d0%bd%d0%bd%d0%be%d0%b5-%d1%81%d0%be%d0%b4%d0%b5%d1%80%d0%b6%d0%b8%d0%bc%d0%be%d0%b5/</link>
+		<comments>https://loadtestweb.wordpress.com/2017/02/25/%d0%b8%d0%b7%d0%b1%d1%80%d0%b0%d0%bd%d0%bd%d0%be%d0%b5-%d1%81%d0%be%d0%b4%d0%b5%d1%80%d0%b6%d0%b8%d0%bc%d0%be%d0%b5/#respond</comments>
+		<pubDate>Sat, 25 Feb 2017 09:37:28 +0000</pubDate>
+		<dc:creator><![CDATA[loadtestweb]]></dc:creator>
+				<category><![CDATA[Задание по школе тестирования]]></category>
+		<category><![CDATA[Задание]]></category>
+		<category><![CDATA[Инструкция]]></category>
+		<category><![CDATA[featured]]></category>
+
+		<guid isPermaLink="false">http://loadtestweb.wordpress.com/?p=7</guid>
+		<description><![CDATA[Задания и инструкции.<img alt="" border="0" src="https://pixel.wp.com/b.gif?host=loadtestweb.wordpress.com&#038;blog=124701137&#038;post=7&#038;subd=loadtestweb&#038;ref=&#038;feed=1" width="1" height="1" />]]></description>
+				<content:encoded><![CDATA[<h2>Ссылки на описание заданий</h2>
+<p>Задания содержатся в рубрике <a href="https://loadtestweb.wordpress.com/category/%D0%B7%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5-%D0%BF%D0%BE-%D1%88%D0%BA%D0%BE%D0%BB%D0%B5-%D1%82%D0%B5%D1%81%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F/" target="_blank">Задание по школе тестирования</a>:</p>
+<ol>
+<li><a href="https://loadtestweb.wordpress.com/2017/03/01/%d0%b7%d0%b0%d0%b4%d0%b0%d0%bd%d0%b8%d0%b5-1-%d1%80%d0%b0%d0%b1%d0%be%d1%82%d0%b0-%d1%81-xml-%d0%b2-jmeter/" target="_blank">Работа с XML в JMeter</a>.</li>
+<li><a href="https://loadtestweb.wordpress.com/2017/03/02/%d0%b7%d0%b0%d0%b4%d0%b0%d0%bd%d0%b8%d0%b5-2-%d1%80%d0%b0%d0%b1%d0%be%d1%82%d0%b0-%d1%81-json-%d0%b2-apache-jmeter/" target="_blank">Работа с JSON в Apache.JMeter</a>.</li>
+<li><a href="https://loadtestweb.wordpress.com/2017/03/02/%d0%b7%d0%b0%d0%b4%d0%b0%d0%bd%d0%b8%d0%b5-3-%d0%b7%d0%b0%d0%b3%d1%80%d1%83%d0%b7%d0%ba%d0%b0-html-%d1%81%d1%82%d1%80%d0%b0%d0%bd%d0%b8%d1%86%d1%8b-%d0%b2-apache-jmeter/" target="_blank">Открыть статью (html-страница)</a>.</li>
+<li><a href="https://loadtestweb.wordpress.com/2017/03/02/%d0%b7%d0%b0%d0%b4%d0%b0%d0%bd%d0%b8%d0%b5-4-%d0%be%d1%81%d1%82%d0%b0%d0%b2%d0%b8%d1%82%d1%8c-%d0%ba%d0%be%d0%bc%d0%bc%d0%b5%d0%bd%d1%82%d0%b0%d1%80%d0%b8%d0%b9-%d0%ba-%d1%81%d1%82%d0%b0%d1%82%d1%8c/" target="_blank">Оставить комментарий к статье</a>.</li>
+</ol>
+<h2>Инструкции</h2>
+<p>Также пригодятся инструкции:</p>
+<ul>
+<li><a href="https://loadtestweb.wordpress.com/2017/03/02/fiddler-4-%d0%bd%d0%b0%d1%81%d1%82%d1%80%d0%be%d0%b9%d0%ba%d0%b0-%d0%b8-%d0%b8%d1%81%d0%bf%d0%be%d0%bb%d1%8c%d0%b7%d0%be%d0%b2%d0%b0%d0%bd%d0%b8%d0%b5-%d1%81-https/" target="_blank">Fiddler 4. Настройка HTTPS</a>;</li>
+<li><a href="https://loadtestweb.wordpress.com/2017/03/12/%d0%ba%d0%be%d0%bd%d1%82%d1%80%d0%be%d0%bb%d1%8c-%d0%b2%d0%b5%d1%80%d1%81%d0%b8%d0%b9/" target="_blank">Git. Системы контроля версий</a>.</li>
+</ul>
+<h2>Профиль нагрузки</h2>
+<p>Сценарий работы:</p>
+<ol>
+<li>Открыть стартовую страницу сайта.</li>
+<li>Загрузить RSS-ленту, выбрать из RSS ссылку на случайную статью и открыть статью по выбранной ссылке. <em>Демонстрация работы с XML.</em></li>
+<li>Нажать кнопку <em><span style="text-decoration:underline;"><strong>Предыдущие записи</strong></span></em> на стартовой странице, из JSON-ответа сервера выбрать ссылку на одну из предыдущих статей и открыть статью по выбранной ссылке. <em>Демонстрация работы с JSON и RegExp.</em></li>
+<li>Открыть статью по ссылке, указанной как персональная тестовая страница, заданная для каждого ученика.</li>
+<li>Оставить комментарий к тестовой странице, неавторизованным пользователем. <em>Работа с CSS-селекторами.</em></li>
+<li>Пауза 10-15 секунд минимум.</li>
+<li>Оставить комментарий к тестовой странице, выполнив аутентификацию. <em>Работа с CSS-селекторами.</em></li>
+<li>Пауза за счёт ожидания завершения шага нагрузки, шаг нагрузки нужно рассчитать.</li>
+</ol>
+<p>Подобрать шаг нагрузки так, чтобы суммарная интенсивность выполнения такого сценария была 1,5-2,5 сценария в минуту.</p>
+<p>Чтобы расчёт шага нагрузки не повторялся, у каждого варианта выполнения задания своё количество VU (виртуальных пользователей):</p>
+<ol>
+<li><a href="https://loadtestweb.wordpress.com/2017/02/25/test-1/" rel="nofollow">Пример статьи # 1</a> использовать 2 VU &#8212; 1,5 сценария в минуту</li>
+<li><a href="https://loadtestweb.wordpress.com/2017/02/25/test-2/" rel="nofollow">Пример статьи # 2</a> использовать 3 VU &#8212; 1,5 сценария в минуту</li>
+<li><a href="https://loadtestweb.wordpress.com/2017/02/25/test-3/" rel="nofollow">Пример статьи # 3</a> использовать 4 VU &#8212; 1,5 сценария в минуту</li>
+<li><a href="https://loadtestweb.wordpress.com/2017/02/25/test-4/" rel="nofollow">Пример статьи # 4</a> использовать 5 VU &#8212; 1,5 сценария в минуту</li>
+<li><a href="https://loadtestweb.wordpress.com/2017/02/25/test-5/" rel="nofollow">Пример статьи # 5</a> использовать 6 VU &#8212; 1,5 сценария в минуту</li>
+<li><a href="https://loadtestweb.wordpress.com/2017/02/25/test-6/" rel="nofollow">Пример статьи # 6</a> использовать 7 VU &#8212; 1,5 сценария в минуту</li>
+<li><a href="https://loadtestweb.wordpress.com/2017/02/25/test-7/" rel="nofollow">Пример статьи # 7</a> использовать 2 VU &#8212; 2 сценария в минуту</li>
+<li><a href="https://loadtestweb.wordpress.com/2017/02/25/test-8/" rel="nofollow">Пример статьи # 8</a> использовать 3 VU &#8212; 2 сценария в минуту</li>
+<li><a href="https://loadtestweb.wordpress.com/2017/02/25/test-9/" rel="nofollow">Пример статьи # 9</a> использовать 4 VU &#8212; 2 сценария в минуту</li>
+<li><a href="https://loadtestweb.wordpress.com/2017/02/25/test-10/" rel="nofollow">Пример статьи # 10</a> использовать 5 VU &#8212; 2 сценария в минуту</li>
+<li><a href="https://loadtestweb.wordpress.com/2017/02/25/test-11/" rel="nofollow">Пример статьи # 11</a> использовать 6 VU &#8212; 2 сценария в минуту</li>
+<li><a href="https://loadtestweb.wordpress.com/2017/02/25/test-12/" rel="nofollow">Пример статьи # 12</a> использовать 7 VU &#8212; 2 сценария в минуту</li>
+<li><a href="https://loadtestweb.wordpress.com/2017/02/25/test-13/" rel="nofollow">Пример статьи # 13</a> использовать 2 VU &#8212; 2,5 сценария в минуту</li>
+<li><a href="https://loadtestweb.wordpress.com/2017/02/25/test-14/" rel="nofollow">Пример статьи # 14</a> использовать 3 VU &#8212; 2,5 сценария в минуту</li>
+<li><a href="https://loadtestweb.wordpress.com/2017/02/25/test-15/" rel="nofollow">Пример статьи # 15</a> использовать 4 VU &#8212; 2,5 сценария в минуту</li>
+</ol><br />  <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gocomments/loadtestweb.wordpress.com/7/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/comments/loadtestweb.wordpress.com/7/" /></a> <img alt="" border="0" src="https://pixel.wp.com/b.gif?host=loadtestweb.wordpress.com&#038;blog=124701137&#038;post=7&#038;subd=loadtestweb&#038;ref=&#038;feed=1" width="1" height="1" />]]></content:encoded>
+			<wfw:commentRss>https://loadtestweb.wordpress.com/2017/02/25/%d0%b8%d0%b7%d0%b1%d1%80%d0%b0%d0%bd%d0%bd%d0%be%d0%b5-%d1%81%d0%be%d0%b4%d0%b5%d1%80%d0%b6%d0%b8%d0%bc%d0%be%d0%b5/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	
+		<media:thumbnail url="https://loadtestweb.files.wordpress.com/2017/02/vlcsnap-2012-08-12-21h01m39s155.png" />
+		<media:content url="http://loadtestweb.files.wordpress.com/2017/02/vlcsnap-2012-08-12-21h01m39s155.png" medium="image">
+			<media:title type="html">vlcsnap-2012-08-12-21h01m39s155</media:title>
+		</media:content>
+
+		<media:content url="http://0.gravatar.com/avatar/993da3fa683fc7e2af464c5b9886609f?s=96&#38;d=identicon&#38;r=G" medium="image">
+			<media:title type="html">loadtestweb</media:title>
+		</media:content>
+	</item>
+	</channel>
+</rss>

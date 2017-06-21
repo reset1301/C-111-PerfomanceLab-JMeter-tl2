@@ -1,0 +1,13 @@
+[
+    {
+        "https://loadtestweb.wordpress.com/2017/02/25/test-12/": 116,
+        "https://loadtestweb.wordpress.com/2017/02/25/test-11/": 112,
+        "https://loadtestweb.wordpress.com/2017/02/25/test-10/": 106,
+        "https://loadtestweb.wordpress.com/2017/02/25/test-9/": 101,
+        "https://loadtestweb.wordpress.com/2017/02/25/test-8/": 97,
+        "https://loadtestweb.wordpress.com/2017/02/25/test-7/": 93,
+        "https://loadtestweb.wordpress.com/2017/02/25/test-6/": 90,
+        "https://loadtestweb.wordpress.com/2017/02/25/test-5/": 86,
+        "https://loadtestweb.wordpress.com/2017/02/25/test-4/": 77
+    }
+]
